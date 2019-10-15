@@ -25,7 +25,7 @@ namespace YYS_Arrange.Class
         /// <summary>
         /// 技能和技能等级
         /// </summary>
-        private int[][] m_skills;
+        private SkillAttr[] m_skills;
         /// <summary>
         /// 式神星级
         /// </summary>
