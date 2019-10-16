@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DataBase.cs" />
+    <Compile Include="Class\GlobalData.cs" />
     <Compile Include="Class\Tools.cs" />
     <Compile Include="Class\WebHandler.cs" />
     <Compile Include="Forms\Form1.cs">

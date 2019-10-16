@@ -13,12 +13,30 @@ namespace YYS_Arrange.Class
         // 从一个对象信息生成Json串
         public static string ObjectToJson(object obj)
         {
-            return JsonConvert.SerializeObject(obj);
+            try
+            {
+                return JsonConvert.SerializeObject(obj);
+            }
+            catch (Exception)
+            {
+                return "";
+                throw;
+            }
+            
         }
         // 从一个Json串生成对象信息
         public static object JsonToObject(string jsonString, object obj)
         {
-            return JsonConvert.DeserializeObject(jsonString, obj.GetType());
+            try
+            {
+                return JsonConvert.DeserializeObject(jsonString, obj.GetType());
+            }
+            catch (Exception)
+            {
+                return null;
+                throw;
+            }
+            
         }
 
     }

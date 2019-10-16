@@ -22,6 +22,7 @@ namespace YYS_Arrange.Forms
         /// <param name="e"></param>
         private void OpenSnapshotBtnClick(object sender, EventArgs e)
         {
+            GlobalData.root = null;
             string fileName;
             OpenFileDialog file = new OpenFileDialog();
             file.Multiselect = false;
@@ -34,12 +35,15 @@ namespace YYS_Arrange.Forms
             StreamReader r = new StreamReader(fileName);
             string json = r.ReadToEnd();
             r.Close();
-            Root root = new Root();
-            root = Tools.JsonToObject(json, root) as Root;
-            if (root == null)
+            GlobalData.root = Tools.JsonToObject(json, GlobalData.root) as Root;
+            if (GlobalData.root == null)
             {
                 MessageBox.Show("请选择正确的快照文件!");
                 return;
+            }
+            else
+            {
+
             }
 
 
