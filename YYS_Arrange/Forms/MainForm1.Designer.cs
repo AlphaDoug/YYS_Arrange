@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-namespace WindowsFormsApp1
+namespace YYS_Arrange.Forms
 {
     partial class MainForm1
     {
@@ -71,6 +71,7 @@ namespace WindowsFormsApp1
             this.InputUrl.TabIndex = 2;
             this.InputUrl.Text = "输入藏宝阁网址";
             this.InputUrl.UseVisualStyleBackColor = true;
+            this.InputUrl.Click += new System.EventHandler(this.InputUrl_Click);
             // 
             // groupBox1
             // 
