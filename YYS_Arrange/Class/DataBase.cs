@@ -25,7 +25,7 @@ namespace YYS_Arrange.Class
         /// </summary>
         public int broken_amulet { get; set; }
         /// <summary>
-        /// 
+        /// 金币数量
         /// </summary>
         public int coin { get; set; }
         /// <summary>

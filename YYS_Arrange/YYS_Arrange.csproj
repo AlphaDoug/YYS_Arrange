@@ -57,11 +57,11 @@
     <Compile Include="Class\GlobalData.cs" />
     <Compile Include="Class\Tools.cs" />
     <Compile Include="Class\WebHandler.cs" />
-    <Compile Include="Forms\Form1.cs">
+    <Compile Include="Forms\EquipsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\EquipsForm.Designer.cs">
+      <DependentUpon>EquipsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\InputUrlForm.cs">
       <SubType>Form</SubType>
@@ -77,8 +77,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EquipsForm.resx">
+      <DependentUpon>EquipsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\InputUrlForm.resx">
       <DependentUpon>InputUrlForm.cs</DependentUpon>

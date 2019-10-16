@@ -22,7 +22,7 @@ namespace YYS_Arrange.Forms
         /// <param name="e"></param>
         private void OpenSnapshotBtnClick(object sender, EventArgs e)
         {
-            GlobalData.root = null;
+            GlobalData.root = new Root();
             string fileName;
             OpenFileDialog file = new OpenFileDialog();
             file.Multiselect = false;
@@ -43,7 +43,8 @@ namespace YYS_Arrange.Forms
             }
             else
             {
-
+                EquipsForm equipsForm = new EquipsForm();
+                equipsForm.ShowDialog();
             }
 
 
