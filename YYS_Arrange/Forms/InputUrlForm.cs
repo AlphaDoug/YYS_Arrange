@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace YYS_Arrange.Forms
 {
-    public partial class MainForm1 : Form
+    public partial class InputUrlForm : Form
     {
-        public MainForm1()
+        public InputUrlForm()
         {
             InitializeComponent();
         }
