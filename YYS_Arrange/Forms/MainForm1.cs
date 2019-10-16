@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Json;
 using System.Windows.Forms;
+using System.Runtime.Serialization;
+using YYS_Arrange.Class;
 
 namespace YYS_Arrange.Forms
 {
     public partial class MainForm1 : Form
     {
+
         public MainForm1()
         {
             InitializeComponent();
@@ -29,9 +27,21 @@ namespace YYS_Arrange.Forms
             file.Multiselect = false;
             file.ShowDialog();
             fileName = file.FileName;
+            if (fileName == "")
+            {
+                return;
+            }
             StreamReader r = new StreamReader(fileName);
             string json = r.ReadToEnd();
-            List<Item> items = JsonConvert.DeserializeObject<List<Item>>(json);
+            r.Close();
+            Root root = new Root();
+            root = Tools.JsonToObject(json, root) as Root;
+            if (root == null)
+            {
+                MessageBox.Show("请选择正确的快照文件!");
+                return;
+            }
+
 
         }
         /// <summary>
