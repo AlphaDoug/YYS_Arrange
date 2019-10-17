@@ -16,7 +16,7 @@ namespace YYS_Arrange.Forms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EquipsForm());
+            Application.Run(new MainForm1());
         }
     }
 }

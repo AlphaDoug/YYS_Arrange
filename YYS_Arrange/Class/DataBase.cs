@@ -9,19 +9,19 @@ namespace YYS_Arrange.Class
     public class Currency
     {
         /// <summary>
-        /// 
+        /// 体力
         /// </summary>
         public int action_point { get; set; }
         /// <summary>
-        /// 
+        /// 现世符咒
         /// </summary>
         public int ar_amulet { get; set; }
         /// <summary>
-        /// 
+        /// 樱饼
         /// </summary>
         public int auto_point { get; set; }
         /// <summary>
-        /// 
+        /// 破碎的符咒
         /// </summary>
         public int broken_amulet { get; set; }
         /// <summary>
@@ -29,67 +29,67 @@ namespace YYS_Arrange.Class
         /// </summary>
         public int coin { get; set; }
         /// <summary>
-        /// 
+        /// 功勋
         /// </summary>
         public int contrib { get; set; }
         /// <summary>
-        /// 
+        /// 逢魔之魂
         /// </summary>
         public int demon_soul { get; set; }
         /// <summary>
-        /// 
+        /// 痴念之券
         /// </summary>
         public int foolery_pass { get; set; }
         /// <summary>
-        /// 
+        /// 金御札
         /// </summary>
         public int gold_ofuda { get; set; }
         /// <summary>
-        /// 
+        /// 荣誉
         /// </summary>
         public int honor { get; set; }
         /// <summary>
-        /// 
+        /// 勾玉
         /// </summary>
         public int jade { get; set; }
         /// <summary>
-        /// 
+        /// 勋章
         /// </summary>
         public int medal { get; set; }
         /// <summary>
-        /// 
+        /// 神秘的符咒
         /// </summary>
         public int mystery_amulet { get; set; }
         /// <summary>
-        /// 
+        /// 御札
         /// </summary>
         public int ofuda { get; set; }
         /// <summary>
-        /// 
+        /// 突破券
         /// </summary>
         public int realm_raid_pass { get; set; }
         /// <summary>
-        /// 
+        /// 大蛇的逆鳞
         /// </summary>
         public int reverse_scale { get; set; }
         /// <summary>
-        /// 
+        /// 魂玉
         /// </summary>
         public int s_jade { get; set; }
         /// <summary>
-        /// 
+        /// 八岐大蛇鳞片
         /// </summary>
         public int scale { get; set; }
         /// <summary>
-        /// 
+        /// 皮肤券
         /// </summary>
         public int skin_token { get; set; }
         /// <summary>
-        /// 
+        /// SP皮肤券
         /// </summary>
         public int sp_skin_token { get; set; }
         /// <summary>
-        /// 
+        /// 御灵境之钥
         /// </summary>
         public int totem_pass { get; set; }
     }

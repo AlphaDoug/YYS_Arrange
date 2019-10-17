@@ -39,5 +39,48 @@ namespace YYS_Arrange.Class
             
         }
 
+        public static string Data2String(string str)
+        {
+            return str;
+        }
+        public static string Data2String(int i)
+        {
+            if (i >= 10000 && i < 100000000)
+            {
+                int j = i / 100;
+                float k = j;
+                k = k / 100.0f;
+                return k.ToString() + "万";
+            }
+            else if(i >= 100000000)
+            {
+                int j = i / 1000000;
+                float k = j;
+                k = k / 100.0f;
+                return k.ToString() + "亿";
+            }
+            else
+            {
+                return i.ToString();
+            }
+        }
+
+        public static string Data2String(double i,bool isPercentage)
+        {
+            if (isPercentage)
+            {
+                double j = i * 10000;
+                int k = (int)j;
+                float m = k / 100;
+                return m.ToString() + @"%";
+            }
+            else
+            {
+                double j = i * 100;
+                int k = (int)j;
+                float m = k / 100;
+                return m.ToString();
+            }
+        }
     }
 }
