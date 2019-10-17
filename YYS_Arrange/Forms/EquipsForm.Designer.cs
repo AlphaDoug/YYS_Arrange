@@ -46,7 +46,7 @@
             this.label49 = new System.Windows.Forms.Label();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.SucaiLabel = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
+            this.RLabel = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox31 = new System.Windows.Forms.PictureBox();
@@ -59,7 +59,7 @@
             this.SRLabel = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.SPLabel = new System.Windows.Forms.Label();
-            this.RLabel = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.SSRlabel = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.ChiquanLabel = new System.Windows.Forms.Label();
@@ -246,7 +246,6 @@
             this.WuxingLabel.Name = "WuxingLabel";
             this.WuxingLabel.Size = new System.Drawing.Size(119, 29);
             this.WuxingLabel.TabIndex = 1;
-            this.WuxingLabel.Text = "2000.2万";
             this.WuxingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox29
@@ -264,7 +263,6 @@
             this.LiuxingLabel.Name = "LiuxingLabel";
             this.LiuxingLabel.Size = new System.Drawing.Size(119, 29);
             this.LiuxingLabel.TabIndex = 1;
-            this.LiuxingLabel.Text = "2000.2万";
             this.LiuxingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SixingLabel
@@ -273,7 +271,6 @@
             this.SixingLabel.Name = "SixingLabel";
             this.SixingLabel.Size = new System.Drawing.Size(119, 29);
             this.SixingLabel.TabIndex = 1;
-            this.SixingLabel.Text = "2000.2万";
             this.SixingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label56
@@ -317,7 +314,7 @@
             this.groupBox2.Controls.Add(this.label49);
             this.groupBox2.Controls.Add(this.pictureBox22);
             this.groupBox2.Controls.Add(this.SucaiLabel);
-            this.groupBox2.Controls.Add(this.label52);
+            this.groupBox2.Controls.Add(this.RLabel);
             this.groupBox2.Controls.Add(this.label37);
             this.groupBox2.Controls.Add(this.pictureBox24);
             this.groupBox2.Controls.Add(this.pictureBox31);
@@ -330,7 +327,7 @@
             this.groupBox2.Controls.Add(this.SRLabel);
             this.groupBox2.Controls.Add(this.label60);
             this.groupBox2.Controls.Add(this.SPLabel);
-            this.groupBox2.Controls.Add(this.RLabel);
+            this.groupBox2.Controls.Add(this.label52);
             this.groupBox2.Controls.Add(this.SSRlabel);
             this.groupBox2.Location = new System.Drawing.Point(7, 406);
             this.groupBox2.Name = "groupBox2";
@@ -364,17 +361,15 @@
             this.SucaiLabel.Name = "SucaiLabel";
             this.SucaiLabel.Size = new System.Drawing.Size(119, 29);
             this.SucaiLabel.TabIndex = 1;
-            this.SucaiLabel.Text = "2000.2万";
             this.SucaiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label52
+            // RLabel
             // 
-            this.label52.Location = new System.Drawing.Point(511, 95);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(119, 29);
-            this.label52.TabIndex = 1;
-            this.label52.Text = "2000.2万";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RLabel.Location = new System.Drawing.Point(511, 95);
+            this.RLabel.Name = "RLabel";
+            this.RLabel.Size = new System.Drawing.Size(119, 29);
+            this.RLabel.TabIndex = 1;
+            this.RLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label37
             // 
@@ -459,7 +454,6 @@
             this.NLabel.Name = "NLabel";
             this.NLabel.Size = new System.Drawing.Size(119, 29);
             this.NLabel.TabIndex = 1;
-            this.NLabel.Text = "2000.2万";
             this.NLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SRLabel
@@ -468,7 +462,6 @@
             this.SRLabel.Name = "SRLabel";
             this.SRLabel.Size = new System.Drawing.Size(119, 29);
             this.SRLabel.TabIndex = 1;
-            this.SRLabel.Text = "2000.2万";
             this.SRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label60
@@ -486,17 +479,16 @@
             this.SPLabel.Name = "SPLabel";
             this.SPLabel.Size = new System.Drawing.Size(119, 29);
             this.SPLabel.TabIndex = 1;
-            this.SPLabel.Text = "2000.2万";
             this.SPLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // RLabel
+            // label52
             // 
-            this.RLabel.Location = new System.Drawing.Point(375, 95);
-            this.RLabel.Name = "RLabel";
-            this.RLabel.Size = new System.Drawing.Size(119, 29);
-            this.RLabel.TabIndex = 1;
-            this.RLabel.Text = "R";
-            this.RLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label52.Location = new System.Drawing.Point(375, 95);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(119, 29);
+            this.label52.TabIndex = 1;
+            this.label52.Text = "R";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SSRlabel
             // 
@@ -504,7 +496,6 @@
             this.SSRlabel.Name = "SSRlabel";
             this.SSRlabel.Size = new System.Drawing.Size(119, 29);
             this.SSRlabel.TabIndex = 1;
-            this.SSRlabel.Text = "2000.2万";
             this.SSRlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox1
@@ -588,7 +579,6 @@
             this.ChiquanLabel.Name = "ChiquanLabel";
             this.ChiquanLabel.Size = new System.Drawing.Size(119, 29);
             this.ChiquanLabel.TabIndex = 1;
-            this.ChiquanLabel.Text = "2000.2万";
             this.ChiquanLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // JinyuzhaLabel
@@ -597,7 +587,6 @@
             this.JinyuzhaLabel.Name = "JinyuzhaLabel";
             this.JinyuzhaLabel.Size = new System.Drawing.Size(119, 29);
             this.JinyuzhaLabel.TabIndex = 1;
-            this.JinyuzhaLabel.Text = "2000.2万";
             this.JinyuzhaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // YouqingdianLabel
@@ -606,7 +595,6 @@
             this.YouqingdianLabel.Name = "YouqingdianLabel";
             this.YouqingdianLabel.Size = new System.Drawing.Size(119, 29);
             this.YouqingdianLabel.TabIndex = 1;
-            this.YouqingdianLabel.Text = "2000.2万";
             this.YouqingdianLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // YulingjingzhiyaoLabel
@@ -615,7 +603,6 @@
             this.YulingjingzhiyaoLabel.Name = "YulingjingzhiyaoLabel";
             this.YulingjingzhiyaoLabel.Size = new System.Drawing.Size(119, 29);
             this.YulingjingzhiyaoLabel.TabIndex = 1;
-            this.YulingjingzhiyaoLabel.Text = "2000.2万";
             this.YulingjingzhiyaoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HunyuLabel
@@ -624,7 +611,6 @@
             this.HunyuLabel.Name = "HunyuLabel";
             this.HunyuLabel.Size = new System.Drawing.Size(119, 29);
             this.HunyuLabel.TabIndex = 1;
-            this.HunyuLabel.Text = "2000.2万";
             this.HunyuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ShishentiaozhanquanLabel
@@ -633,7 +619,6 @@
             this.ShishentiaozhanquanLabel.Name = "ShishentiaozhanquanLabel";
             this.ShishentiaozhanquanLabel.Size = new System.Drawing.Size(119, 29);
             this.ShishentiaozhanquanLabel.TabIndex = 1;
-            this.ShishentiaozhanquanLabel.Text = "2000.2万";
             this.ShishentiaozhanquanLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // YuzhaLabel
@@ -642,7 +627,6 @@
             this.YuzhaLabel.Name = "YuzhaLabel";
             this.YuzhaLabel.Size = new System.Drawing.Size(119, 29);
             this.YuzhaLabel.TabIndex = 1;
-            this.YuzhaLabel.Text = "2000.2万";
             this.YuzhaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PifuquanLabel
@@ -651,7 +635,6 @@
             this.PifuquanLabel.Name = "PifuquanLabel";
             this.PifuquanLabel.Size = new System.Drawing.Size(119, 29);
             this.PifuquanLabel.TabIndex = 1;
-            this.PifuquanLabel.Text = "2000.2万";
             this.PifuquanLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FengmozhihunLabel
@@ -660,7 +643,6 @@
             this.FengmozhihunLabel.Name = "FengmozhihunLabel";
             this.FengmozhihunLabel.Size = new System.Drawing.Size(119, 29);
             this.FengmozhihunLabel.TabIndex = 1;
-            this.FengmozhihunLabel.Text = "2000.2万";
             this.FengmozhihunLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // TiliLabel
@@ -669,7 +651,6 @@
             this.TiliLabel.Name = "TiliLabel";
             this.TiliLabel.Size = new System.Drawing.Size(119, 29);
             this.TiliLabel.TabIndex = 1;
-            this.TiliLabel.Text = "2000.2万";
             this.TiliLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SPPifuquanLabel
@@ -678,7 +659,6 @@
             this.SPPifuquanLabel.Name = "SPPifuquanLabel";
             this.SPPifuquanLabel.Size = new System.Drawing.Size(119, 29);
             this.SPPifuquanLabel.TabIndex = 1;
-            this.SPPifuquanLabel.Text = "2000.2万";
             this.SPPifuquanLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BaiguiyexingLabel
@@ -687,7 +667,6 @@
             this.BaiguiyexingLabel.Name = "BaiguiyexingLabel";
             this.BaiguiyexingLabel.Size = new System.Drawing.Size(119, 29);
             this.BaiguiyexingLabel.TabIndex = 1;
-            this.BaiguiyexingLabel.Text = "2000.2万";
             this.BaiguiyexingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // XianshifuzhouLabel
@@ -696,7 +675,6 @@
             this.XianshifuzhouLabel.Name = "XianshifuzhouLabel";
             this.XianshifuzhouLabel.Size = new System.Drawing.Size(119, 29);
             this.XianshifuzhouLabel.TabIndex = 1;
-            this.XianshifuzhouLabel.Text = "2000.2万";
             this.XianshifuzhouLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label26
@@ -714,7 +692,6 @@
             this.XunzhangLabel.Name = "XunzhangLabel";
             this.XunzhangLabel.Size = new System.Drawing.Size(119, 29);
             this.XunzhangLabel.TabIndex = 1;
-            this.XunzhangLabel.Text = "2000.2万";
             this.XunzhangLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label44
@@ -732,7 +709,6 @@
             this.DashenilinLabel.Name = "DashenilinLabel";
             this.DashenilinLabel.Size = new System.Drawing.Size(119, 29);
             this.DashenilinLabel.TabIndex = 1;
-            this.DashenilinLabel.Text = "2000.2万";
             this.DashenilinLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MeiliLabel
@@ -741,7 +717,6 @@
             this.MeiliLabel.Name = "MeiliLabel";
             this.MeiliLabel.Size = new System.Drawing.Size(119, 29);
             this.MeiliLabel.TabIndex = 1;
-            this.MeiliLabel.Text = "2000.2万";
             this.MeiliLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // GouyuLabel
@@ -750,7 +725,6 @@
             this.GouyuLabel.Name = "GouyuLabel";
             this.GouyuLabel.Size = new System.Drawing.Size(119, 29);
             this.GouyuLabel.TabIndex = 1;
-            this.GouyuLabel.Text = "2000.2万";
             this.GouyuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // YingbingLabel
@@ -759,7 +733,6 @@
             this.YingbingLabel.Name = "YingbingLabel";
             this.YingbingLabel.Size = new System.Drawing.Size(119, 29);
             this.YingbingLabel.TabIndex = 1;
-            this.YingbingLabel.Text = "2000.2万";
             this.YingbingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label39
@@ -777,7 +750,6 @@
             this.ShenmifuzhouLabel.Name = "ShenmifuzhouLabel";
             this.ShenmifuzhouLabel.Size = new System.Drawing.Size(119, 29);
             this.ShenmifuzhouLabel.TabIndex = 1;
-            this.ShenmifuzhouLabel.Text = "2000.2万";
             this.ShenmifuzhouLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label23
@@ -814,7 +786,6 @@
             this.RongyuLabel.Name = "RongyuLabel";
             this.RongyuLabel.Size = new System.Drawing.Size(119, 29);
             this.RongyuLabel.TabIndex = 1;
-            this.RongyuLabel.Text = "2000.2万";
             this.RongyuLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox8
@@ -833,7 +804,6 @@
             this.DashelinpianLabel.Name = "DashelinpianLabel";
             this.DashelinpianLabel.Size = new System.Drawing.Size(119, 29);
             this.DashelinpianLabel.TabIndex = 1;
-            this.DashelinpianLabel.Text = "2000.2万";
             this.DashelinpianLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // CoinLabel
@@ -842,7 +812,6 @@
             this.CoinLabel.Name = "CoinLabel";
             this.CoinLabel.Size = new System.Drawing.Size(119, 29);
             this.CoinLabel.TabIndex = 1;
-            this.CoinLabel.Text = "2000.2万";
             this.CoinLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label21
@@ -1440,7 +1409,7 @@
         private System.Windows.Forms.PictureBox pictureBox27;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.PictureBox pictureBox22;
-        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label RLabel;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox25;
@@ -1448,7 +1417,7 @@
         private System.Windows.Forms.PictureBox pictureBox26;
         private System.Windows.Forms.Label SRLabel;
         private System.Windows.Forms.Label SPLabel;
-        private System.Windows.Forms.Label RLabel;
+        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label SSRlabel;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage5;

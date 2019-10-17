@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Class\DataBase.cs" />
     <Compile Include="Class\GlobalData.cs" />
+    <Compile Include="Class\HeroControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Class\HeroControlPanel.Designer.cs">
+      <DependentUpon>HeroControlPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\Tools.cs" />
     <Compile Include="Class\WebHandler.cs" />
     <Compile Include="Forms\EquipsForm.cs">
@@ -77,6 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Class\HeroControlPanel.resx">
+      <DependentUpon>HeroControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\EquipsForm.resx">
       <DependentUpon>EquipsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +161,14 @@
     <None Include="Res\sp.png" />
     <None Include="Res\sr.png" />
     <None Include="Res\ssr.png" />
+    <None Include="Res\217.png" />
+    <None Include="Res\SSR_Bg.png" />
+    <None Include="Res\blue_goyu.png" />
+    <None Include="Res\grey_goyu.png" />
+    <None Include="Res\orange_goyu.png" />
+    <None Include="Res\purple_goyu.png" />
+    <None Include="Res\hero_levelBg.png" />
+    <None Include="Res\hero_numBg.png" />
     <Content Include="Res\山兔1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

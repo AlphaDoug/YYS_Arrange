@@ -39,5 +39,17 @@ namespace YYS_Arrange.Class
         /// 素材数量
         /// </summary>
         public static int hero_sucai = 0;
+        /// <summary>
+        /// 6星御魂数量
+        /// </summary>
+        public static int equip_star_6 = 0;
+        /// <summary>
+        /// 5星御魂数量
+        /// </summary>
+        public static int equip_star_5 = 0;
+        /// <summary>
+        /// 4星御魂数量
+        /// </summary>
+        public static int equip_star_4 = 0;
     }
 }

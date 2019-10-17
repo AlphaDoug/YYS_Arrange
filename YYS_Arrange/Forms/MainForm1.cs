@@ -32,6 +32,11 @@ namespace YYS_Arrange.Forms
             {
                 return;
             }
+            if (!fileName.Contains("json"))
+            {
+                MessageBox.Show("请选择正确的快照文件!");
+                return;
+            }
             StreamReader r = new StreamReader(fileName);
             string json = r.ReadToEnd();
             r.Close();
@@ -61,3 +66,5 @@ namespace YYS_Arrange.Forms
         }
     }
 }
+
+

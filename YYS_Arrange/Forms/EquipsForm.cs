@@ -24,7 +24,10 @@ namespace YYS_Arrange.Forms
         private void Form1_Load(object sender, EventArgs e)
         {
             tabControl2.DrawMode = TabDrawMode.OwnerDrawFixed;//设置为用户绘制方式
-            InitBaseData();
+
+            InitGlobalData();
+
+            ShowBaseData();
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
@@ -40,10 +43,53 @@ namespace YYS_Arrange.Forms
 
 
         /// <summary>
-        /// 初始化概况数据
+        /// 展示概况数据
         /// </summary>
-        private void InitBaseData()
+        private void ShowBaseData()
         {
+
+            //设置金币数量
+            CoinLabel.Text = Tools.Data2String(GlobalData.root.data.currency.coin);
+            //设置勾玉信息
+            GouyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.jade);
+            TiliLabel.Text = Tools.Data2String(GlobalData.root.data.currency.action_point);
+            HunyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.s_jade);
+            ShenmifuzhouLabel.Text = Tools.Data2String(GlobalData.root.data.currency.mystery_amulet);
+            XianshifuzhouLabel.Text = Tools.Data2String(GlobalData.root.data.currency.ar_amulet);
+            YuzhaLabel.Text = Tools.Data2String(GlobalData.root.data.currency.ofuda);
+            JinyuzhaLabel.Text = Tools.Data2String(GlobalData.root.data.currency.gold_ofuda);
+            DashelinpianLabel.Text = Tools.Data2String(GlobalData.root.data.currency.scale);
+            DashenilinLabel.Text = Tools.Data2String(GlobalData.root.data.currency.reverse_scale);
+            FengmozhihunLabel.Text = Tools.Data2String(GlobalData.root.data.currency.demon_soul);
+            YulingjingzhiyaoLabel.Text = Tools.Data2String(GlobalData.root.data.currency.s_jade);
+            YingbingLabel.Text = Tools.Data2String(GlobalData.root.data.currency.auto_point);
+            BaiguiyexingLabel.Text = "未记录";
+            ShishentiaozhanquanLabel.Text = "未记录";
+            ChiquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.foolery_pass);
+            RongyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.honor);
+            XunzhangLabel.Text = Tools.Data2String(GlobalData.root.data.currency.medal);
+            PifuquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.skin_token);
+            YouqingdianLabel.Text = "未记录";
+            MeiliLabel.Text = "未记录";
+            SPPifuquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.sp_skin_token);
+
+            SPLabel.Text = Tools.Data2String(GlobalData.hero_sp);
+            SSRlabel.Text = Tools.Data2String(GlobalData.hero_ssr);
+            SRLabel.Text = Tools.Data2String(GlobalData.hero_sr);
+            RLabel.Text = Tools.Data2String(GlobalData.hero_r);
+            NLabel.Text = Tools.Data2String(GlobalData.hero_n);
+            SucaiLabel.Text = Tools.Data2String(GlobalData.hero_sucai);
+
+            LiuxingLabel.Text = Tools.Data2String(GlobalData.equip_star_6);
+            WuxingLabel.Text = Tools.Data2String(GlobalData.equip_star_5);
+            SixingLabel.Text = Tools.Data2String(GlobalData.equip_star_4);
+        }
+        /// <summary>
+        /// 初始化全局数据
+        /// </summary>
+        private void InitGlobalData()
+        {
+            #region 初始化各个稀有度式神数量
             for (int i = 0; i < GlobalData.root.data.heroes.Count; i++)
             {
                 if (GlobalData.root.data.heroes[i].rarity == "SP")
@@ -71,37 +117,32 @@ namespace YYS_Arrange.Forms
                     GlobalData.hero_sucai++;
                 }
             }
-            //设置金币数量
-            CoinLabel.Text = Tools.Data2String(GlobalData.root.data.currency.coin);
-            //设置勾玉信息
-            GouyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.jade);
-            TiliLabel.Text = Tools.Data2String(GlobalData.root.data.currency.action_point);
-            HunyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.s_jade);
-            ShenmifuzhouLabel.Text = Tools.Data2String(GlobalData.root.data.currency.mystery_amulet);
-            XianshifuzhouLabel.Text = Tools.Data2String(GlobalData.root.data.currency.ar_amulet);
-            YuzhaLabel.Text = Tools.Data2String(GlobalData.root.data.currency.ofuda);
-            label44.Text = Tools.Data2String(GlobalData.root.data.currency.gold_ofuda);
-            DashelinpianLabel.Text = Tools.Data2String(GlobalData.root.data.currency.scale);
-            label25.Text = Tools.Data2String(GlobalData.root.data.currency.reverse_scale);
-            FengmozhihunLabel.Text = Tools.Data2String(GlobalData.root.data.currency.demon_soul);
-            YulingjingzhiyaoLabel.Text = Tools.Data2String(GlobalData.root.data.currency.s_jade);
-            YingbingLabel.Text = Tools.Data2String(GlobalData.root.data.currency.auto_point);
-            BaiguiyexingLabel.Text = "未记录";
-            ShishentiaozhanquanLabel.Text = "未记录";
-            ChiquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.foolery_pass);
-            RongyuLabel.Text = Tools.Data2String(GlobalData.root.data.currency.honor);
-            XunzhangLabel.Text = Tools.Data2String(GlobalData.root.data.currency.medal);
-            PifuquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.skin_token);
-            YouqingdianLabel.Text = "未记录";
-            MeiliLabel.Text = "未记录";
-            SPPifuquanLabel.Text = Tools.Data2String(GlobalData.root.data.currency.sp_skin_token);
+            #endregion
 
-            SPLabel.Text = Tools.Data2String(GlobalData.hero_sp);
-            SSRlabel.Text = Tools.Data2String(GlobalData.hero_ssr);
-            SRLabel.Text = Tools.Data2String(GlobalData.hero_sr);
-            RLabel.Text = Tools.Data2String(GlobalData.hero_r);
-            NLabel.Text = Tools.Data2String(GlobalData.hero_n);
-            SucaiLabel.Text = Tools.Data2String(GlobalData.hero_sucai);
+            #region 初始化各个星级御魂数量
+            for (int i = 0; i < GlobalData.root.data.hero_equips.Count; i++)
+            {
+                switch (GlobalData.root.data.hero_equips[i].quality)
+                {
+                    case 6:
+                        GlobalData.equip_star_6++;
+                        break;
+                    case 5:
+                        GlobalData.equip_star_5++;
+                        break;
+                    case 4:
+                        GlobalData.equip_star_4++;
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            #endregion
+        }
+
+        private void HeroRarityPic_Click(object sender, EventArgs e)
+        {
 
         }
     }

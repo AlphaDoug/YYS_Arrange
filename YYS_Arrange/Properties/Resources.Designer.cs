@@ -203,9 +203,29 @@ namespace YYS_Arrange.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _217 {
+            get {
+                object obj = ResourceManager.GetObject("_217", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap baigui_icon {
             get {
                 object obj = ResourceManager.GetObject("baigui_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap blue_goyu {
+            get {
+                object obj = ResourceManager.GetObject("blue_goyu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +256,36 @@ namespace YYS_Arrange.Properties {
         internal static System.Drawing.Bitmap gouyu_icon {
             get {
                 object obj = ResourceManager.GetObject("gouyu_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap grey_goyu {
+            get {
+                object obj = ResourceManager.GetObject("grey_goyu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap hero_levelBg {
+            get {
+                object obj = ResourceManager.GetObject("hero_levelBg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap hero_numBg {
+            get {
+                object obj = ResourceManager.GetObject("hero_numBg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -313,9 +363,29 @@ namespace YYS_Arrange.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap orange_goyu {
+            get {
+                object obj = ResourceManager.GetObject("orange_goyu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap pifuquan_icon {
             get {
                 object obj = ResourceManager.GetObject("pifuquan_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap purple_goyu {
+            get {
+                object obj = ResourceManager.GetObject("purple_goyu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -396,6 +466,16 @@ namespace YYS_Arrange.Properties {
         internal static System.Drawing.Bitmap ssr {
             get {
                 object obj = ResourceManager.GetObject("ssr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap SSR_Bg {
+            get {
+                object obj = ResourceManager.GetObject("SSR_Bg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

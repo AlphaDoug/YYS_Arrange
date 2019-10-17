@@ -241,7 +241,31 @@
   <data name="yuzha_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\yuzha_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_217" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\217.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="山兔1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\山兔1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue_goyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\blue_goyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="grey_goyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\grey_goyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hero_levelBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\hero_levelBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hero_numBg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\hero_numBg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orange_goyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\orange_goyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="purple_goyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\purple_goyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SSR_Bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\SSR_Bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
