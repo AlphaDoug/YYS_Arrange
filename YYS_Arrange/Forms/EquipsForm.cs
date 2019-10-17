@@ -29,15 +29,12 @@ namespace YYS_Arrange.Forms
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
         {
-            Rectangle tabArea = tabControl1.GetTabRect(e.Index);//主要是做个转换来获得TAB项的RECTANGELF
-            RectangleF tabTextArea = (RectangleF)(tabControl1.GetTabRect(e.Index));
-            Graphics g = e.Graphics;
-            StringFormat sf = new StringFormat();//封装文本布局信息
-            sf.LineAlignment = StringAlignment.Center;
-            sf.Alignment = StringAlignment.Near;
-            Font font = this.tabControl1.Font;
-            SolidBrush brush = new SolidBrush(Color.Black);//绘制边框的画笔
-            g.DrawString(((TabControl)(sender)).TabPages[e.Index].Text, font, brush, tabTextArea, sf);
+            SolidBrush _Brush = new SolidBrush(Color.Black);//单色画刷
+            RectangleF _TabTextArea = (RectangleF)tabControl2.GetTabRect(e.Index);//绘制区域
+            StringFormat _sf = new StringFormat();//封装文本布局格式信息
+            _sf.LineAlignment = StringAlignment.Center;
+            _sf.Alignment = StringAlignment.Center;
+            e.Graphics.DrawString(tabControl2.Controls[e.Index].Text, SystemInformation.MenuFont, _Brush, _TabTextArea, _sf);
         }
     }
 }

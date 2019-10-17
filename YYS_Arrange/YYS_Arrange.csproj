@@ -111,6 +111,47 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Res\200006.png" />
+    <None Include="Res\200016.png" />
+    <None Include="Res\200026.png" />
+    <None Include="Res\200036.png" />
+    <None Include="Res\200395.png" />
+    <None Include="Res\200406.png" />
+    <None Include="Res\200416.png" />
+    <None Include="Res\200426.png" />
+    <None Include="Res\200436.png" />
+    <None Include="Res\200446.png" />
+    <None Include="Res\200456.png" />
+    <None Include="Res\200466.png" />
+    <None Include="Res\200476.png" />
+    <None Include="Res\200496.png" />
+    <None Include="Res\baigui_icon.png" />
+    <None Include="Res\chi_icon.png" />
+    <None Include="Res\fengmozhihun_icon.png" />
+    <None Include="Res\gouyu_icon.png" />
+    <None Include="Res\hunyu_icon.png" />
+    <None Include="Res\jinbi_icon.png" />
+    <None Include="Res\jinyuzha_icon.png" />
+    <None Include="Res\linpian_icon.png" />
+    <None Include="Res\meili_icon.png" />
+    <None Include="Res\nilin_icon.png" />
+    <None Include="Res\pifuquan_icon.png" />
+    <None Include="Res\rongyu_icon.png" />
+    <None Include="Res\shenmifuzhou_icon.png" />
+    <None Include="Res\shishentiaozhan_icon.png" />
+    <None Include="Res\sppifuquan_icon.png" />
+    <None Include="Res\tili_icon.png" />
+    <None Include="Res\xianshifuzhou_icon.png" />
+    <None Include="Res\xunzhang_icon.png" />
+    <None Include="Res\yingbing_icon.png" />
+    <None Include="Res\youqingdian_icon.png" />
+    <None Include="Res\yuling_icon.png" />
+    <None Include="Res\yuzha_icon.png" />
+    <None Include="Res\n.png" />
+    <None Include="Res\r.png" />
+    <None Include="Res\sp.png" />
+    <None Include="Res\sr.png" />
+    <None Include="Res\ssr.png" />
     <Content Include="Res\山兔1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
