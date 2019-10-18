@@ -31,14 +31,14 @@ namespace YYS_Arrange.Class
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HeroUserControl));
             this.HeroInfoPanel = new System.Windows.Forms.Panel();
-            this.HeroNameLabel = new System.Windows.Forms.Label();
-            this.HeroAwakeLabel = new System.Windows.Forms.Label();
             this.HeroStar1 = new System.Windows.Forms.PictureBox();
+            this.HeroNameLabel = new System.Windows.Forms.Label();
             this.HeroStar2 = new System.Windows.Forms.PictureBox();
             this.HeroStar3 = new System.Windows.Forms.PictureBox();
             this.HeroStar4 = new System.Windows.Forms.PictureBox();
             this.HeroStar6 = new System.Windows.Forms.PictureBox();
             this.HeroStar5 = new System.Windows.Forms.PictureBox();
+            this.HeroAwakeLabel = new System.Windows.Forms.Label();
             this.HeroNumLabel = new System.Windows.Forms.Label();
             this.HeroLevelLabel = new System.Windows.Forms.Label();
             this.HeroRarityPic = new System.Windows.Forms.PictureBox();
@@ -70,31 +70,6 @@ namespace YYS_Arrange.Class
             this.HeroInfoPanel.Size = new System.Drawing.Size(100, 133);
             this.HeroInfoPanel.TabIndex = 30;
             // 
-            // HeroNameLabel
-            // 
-            this.HeroNameLabel.BackColor = System.Drawing.Color.LightGray;
-            this.HeroNameLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.HeroNameLabel.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HeroNameLabel.Location = new System.Drawing.Point(0, 108);
-            this.HeroNameLabel.Margin = new System.Windows.Forms.Padding(0);
-            this.HeroNameLabel.Name = "HeroNameLabel";
-            this.HeroNameLabel.Size = new System.Drawing.Size(100, 25);
-            this.HeroNameLabel.TabIndex = 19;
-            this.HeroNameLabel.Text = "炼狱茨木童子";
-            this.HeroNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // HeroAwakeLabel
-            // 
-            this.HeroAwakeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.HeroAwakeLabel.BackColor = System.Drawing.Color.MediumOrchid;
-            this.HeroAwakeLabel.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HeroAwakeLabel.Location = new System.Drawing.Point(81, 50);
-            this.HeroAwakeLabel.Name = "HeroAwakeLabel";
-            this.HeroAwakeLabel.Size = new System.Drawing.Size(19, 30);
-            this.HeroAwakeLabel.TabIndex = 26;
-            this.HeroAwakeLabel.Text = "觉";
-            this.HeroAwakeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // HeroStar1
             // 
             this.HeroStar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -107,6 +82,19 @@ namespace YYS_Arrange.Class
             this.HeroStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar1.TabIndex = 25;
             this.HeroStar1.TabStop = false;
+            // 
+            // HeroNameLabel
+            // 
+            this.HeroNameLabel.BackColor = System.Drawing.Color.LightGray;
+            this.HeroNameLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.HeroNameLabel.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HeroNameLabel.Location = new System.Drawing.Point(0, 108);
+            this.HeroNameLabel.Margin = new System.Windows.Forms.Padding(0);
+            this.HeroNameLabel.Name = "HeroNameLabel";
+            this.HeroNameLabel.Size = new System.Drawing.Size(100, 25);
+            this.HeroNameLabel.TabIndex = 19;
+            this.HeroNameLabel.Text = "炼狱茨木童子";
+            this.HeroNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // HeroStar2
             // 
@@ -176,9 +164,22 @@ namespace YYS_Arrange.Class
             this.HeroStar5.TabIndex = 21;
             this.HeroStar5.TabStop = false;
             // 
+            // HeroAwakeLabel
+            // 
+            this.HeroAwakeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.HeroAwakeLabel.BackColor = System.Drawing.Color.MediumOrchid;
+            this.HeroAwakeLabel.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HeroAwakeLabel.Location = new System.Drawing.Point(81, 50);
+            this.HeroAwakeLabel.Name = "HeroAwakeLabel";
+            this.HeroAwakeLabel.Size = new System.Drawing.Size(19, 30);
+            this.HeroAwakeLabel.TabIndex = 26;
+            this.HeroAwakeLabel.Text = "觉";
+            this.HeroAwakeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // HeroNumLabel
             // 
             this.HeroNumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HeroNumLabel.BackColor = System.Drawing.Color.Transparent;
             this.HeroNumLabel.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.HeroNumLabel.Image = global::YYS_Arrange.Properties.Resources.hero_numBg;
             this.HeroNumLabel.Location = new System.Drawing.Point(74, 1);
@@ -192,6 +193,7 @@ namespace YYS_Arrange.Class
             // HeroLevelLabel
             // 
             this.HeroLevelLabel.AutoSize = true;
+            this.HeroLevelLabel.BackColor = System.Drawing.Color.Transparent;
             this.HeroLevelLabel.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.HeroLevelLabel.ForeColor = System.Drawing.Color.White;
             this.HeroLevelLabel.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;

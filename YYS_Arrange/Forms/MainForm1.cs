@@ -14,6 +14,7 @@ namespace YYS_Arrange.Forms
         public MainForm1()
         {
             InitializeComponent();
+            GameConfig gameConfig = new GameConfig();
         }
         /// <summary>
         /// 点击打开快照文件按钮

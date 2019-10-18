@@ -16,6 +16,7 @@ namespace YYS_Arrange.Class
         {
             ShowInfo = heroShowInfo;
             InitializeComponent();
+            SetParent();
             HeroShowInfo();
         }
 
@@ -197,6 +198,20 @@ namespace YYS_Arrange.Class
             HeroRarityPic.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("_" + ShowInfo.id, null);
 
             HeroNameLabel.Text = ShowInfo.name;
+        }
+        /// <summary>
+        /// 设置重叠控件的父控件,以便透明显示
+        /// </summary>
+        private void SetParent()
+        {
+            HeroStar1.Parent = HeroRarityPic;
+            HeroStar2.Parent = HeroRarityPic;
+            HeroStar3.Parent = HeroRarityPic;
+            HeroStar4.Parent = HeroRarityPic;
+            HeroStar5.Parent = HeroRarityPic;
+            HeroStar6.Parent = HeroRarityPic;
+            HeroLevelLabel.Parent = HeroRarityPic;
+            HeroNumLabel.Parent = HeroRarityPic; 
         }
     }
 }

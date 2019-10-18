@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\DataBase.cs" />
+    <Compile Include="Class\GameConfig.cs" />
     <Compile Include="Class\GlobalData.cs" />
     <Compile Include="Class\HeroUserControl.cs">
       <SubType>UserControl</SubType>
@@ -161,7 +162,6 @@
     <None Include="Res\sp.png" />
     <None Include="Res\sr.png" />
     <None Include="Res\ssr.png" />
-    <None Include="Res\217.png" />
     <None Include="Res\SSR_Bg.png" />
     <None Include="Res\blue_goyu.png" />
     <None Include="Res\grey_goyu.png" />

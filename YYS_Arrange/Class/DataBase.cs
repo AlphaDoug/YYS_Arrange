@@ -11,10 +11,12 @@ namespace YYS_Arrange.Class
         public int id;
         public int star;
         public int level;
+        public double exp;
         public int count;
         public string name;
         public string rarity;
         public bool awake;
+        public int born;
     }
 
     public class Currency

@@ -29,7 +29,7 @@ namespace YYS_Arrange.Forms
 
             ShowBaseData();
 
-            ShowHeros();
+            ShowHerosFold();
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
@@ -143,40 +143,246 @@ namespace YYS_Arrange.Forms
             #endregion
         }
         /// <summary>
-        /// 展示御魂到面板上
+        /// 以折叠形式将式神展示到面板上
         /// </summary>
-        private void ShowHeros()
+        private void ShowHerosFold()
         {
+            //御魂面板上,SP-SSR-SR-R-N顺序,稀有度相同的按照等级,等级相同的按照获得顺序,若两个相同类型的式神经验都是0则可以折叠显示
             HeroShowInfo heroShowInfo = new HeroShowInfo();
             int x = 0;
             int y = 0;
             int count = 0;
+            //在界面上展示的式神信息,排序生效
+            List<HeroShowInfo> heroShowInfos = new List<HeroShowInfo>(); 
             for (int i = 0; i < GlobalData.root.data.heroes.Count; i++)
             {
-                if (GlobalData.root.data.heroes[i].rarity == "SSR" || GlobalData.root.data.heroes[i].rarity == "SR" || GlobalData.root.data.heroes[i].rarity == "SP" )
-                {
-                    heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
-                    heroShowInfo.level = GlobalData.root.data.heroes[i].level;
-                    heroShowInfo.name = GlobalData.root.data.heroes[i].nick_name;
-                    heroShowInfo.rarity = GlobalData.root.data.heroes[i].rarity;
-                    heroShowInfo.star = GlobalData.root.data.heroes[i].star;
-                    heroShowInfo.awake = GlobalData.root.data.heroes[i].awake;
-                    heroShowInfo.count = 1;
-                    HeroUserControl heroUserControl = new HeroUserControl(heroShowInfo);
-                    x = (count % 10) * 126 + 10;
-                    y = (count - count % 10) / 10 * 159 + 10;
-                    heroUserControl.Location = new Point(x, y);
-                    panel1.Controls.Add(heroUserControl);
-
-                    count++;
-                }
+                heroShowInfo.born = GlobalData.root.data.heroes[i].born;
+                heroShowInfo.exp = GlobalData.root.data.heroes[i].exp;
+                heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
+                heroShowInfo.level = GlobalData.root.data.heroes[i].level;
+                heroShowInfo.name = GlobalData.root.data.heroes[i].nick_name;
+                heroShowInfo.rarity = GlobalData.root.data.heroes[i].rarity;
+                heroShowInfo.star = GlobalData.root.data.heroes[i].star;
+                heroShowInfo.awake = GlobalData.root.data.heroes[i].awake;
+                heroShowInfo.count = 1;
+                heroShowInfos.Add(heroShowInfo);
 
             }
+            //对式神稀有度进行排序
+            for (int i = 0; i < heroShowInfos.Count - 1; i++)
+            {
+                for (int j = i + 1; j < heroShowInfos.Count; j++)
+                {
+                    if (CompareAsLevel(heroShowInfos[i], heroShowInfos[j]) < 0)
+                    {
+                        HeroShowInfo temp = heroShowInfos[i];
+                        heroShowInfos[i] = heroShowInfos[j];
+                        heroShowInfos[j] = temp;
+                    }
+                }
+            }
+
+            for (int i = 0; i < heroShowInfos.Count; i++)
+            {
+                if (heroShowInfos[i].rarity == "R" || heroShowInfos[i].rarity == "N")
+                {
+                    continue;
+                }
+                HeroUserControl heroUserControl = new HeroUserControl(heroShowInfos[i]);
+                x = (count % 10) * 126 + 10;
+                y = (count - count % 10) / 10 * 159 + 10;
+                heroUserControl.Location = new Point(x, y);
+                panel1.Controls.Add(heroUserControl);
+
+                count++;
+            }
         }
+        /// <summary>
+        /// 比较a和b的大小,按照稀有度->等级->经验->出生日期
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns>a大返回1,a小返回-1</returns>
+        private int CompareAsRarity(HeroShowInfo a,HeroShowInfo b)
+        {
+            if(CompareRarity(a.rarity, b.rarity) != 0)
+            {
+                if (CompareRarity(a.rarity, b.rarity) > 0)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            else
+            {
+                if (a.level != b.level)
+                {
+                    if (a.level > b.level)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return -1;
+                    }
+                }
+                else
+                {
+                    if (a.exp >= b.exp)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        if (a.born > b.born)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return -1;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// 比较a和b的大小,按照等级->稀有度->经验->出生日期
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns>a大返回1,a小返回-1</returns>
+        private int CompareAsLevel(HeroShowInfo a, HeroShowInfo b)
+        {
+            if (a.level != b.level)
+            {
+                if (a.level > b.level)
+                {
+                    return 1;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+            else
+            {
+                if (CompareRarity(a.rarity, b.rarity) != 0)
+                {
+                    if (CompareRarity(a.rarity, b.rarity) > 0)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        return -1;
+                    }
+                }
+                else
+                {
+                    if (a.exp >= b.exp)
+                    {
+                        return 1;
+                    }
+                    else
+                    {
+                        if (a.born > b.born)
+                        {
+                            return 1;
+                        }
+                        else
+                        {
+                            return -1;
+                        }
+
+                    }
+                }
+            }
+        }
+
 
         private void HeroRarityPic_Click(object sender, EventArgs e)
         {
 
+        }
+        /// <summary>
+        /// 比较两个稀有度
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns>a比b稀有返回1,b比a稀有返回-1,稀有度相同返回0</returns>
+        private int CompareRarity(string a,string b)
+        {
+            switch (a)
+            {
+                case "SP":
+                    if (b == "SP")
+                    {
+                        return 0;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+
+                case "SSR":
+                    if (b=="SSR")
+                    {
+                        return 0;
+                    }
+                    else if(b =="SP")
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+
+                case "SR":
+                    if (b == "SR")
+                    {
+                        return 0;
+                    }
+                    else if (b == "SP" || b == "SSR")
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+                case "R":
+                    if (b == "R")
+                    {
+                        return 0;
+                    }
+                    else if (b == "SP" || b == "SSR" || b == "SR")
+                    {
+                        return -1;
+                    }
+                    else
+                    {
+                        return 1;
+                    }
+                case "N":
+                    if (b == "N")
+                    {
+                        return 0;
+                    }
+                    else
+                    {
+                        return -1;
+                    }
+                default:
+                    return 0;
+                   
+            }
         }
     }
 }
