@@ -6,6 +6,17 @@ using System.Threading.Tasks;
 
 namespace YYS_Arrange.Class
 {
+    public struct HeroShowInfo
+    {
+        public int id;
+        public int star;
+        public int level;
+        public int count;
+        public string name;
+        public string rarity;
+        public bool awake;
+    }
+
     public class Currency
     {
         /// <summary>
@@ -411,7 +422,7 @@ namespace YYS_Arrange.Class
         /// <summary>
         /// 
         /// </summary>
-        public int awake { get; set; }
+        public bool awake { get; set; }
         /// <summary>
         /// 
         /// </summary>

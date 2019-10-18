@@ -29,11 +29,7 @@ namespace YYS_Arrange.Forms
 
             ShowBaseData();
 
-            for (int i = 0; i < 50; i++)
-            {
-                HeroUserControl heroUserControl = new HeroUserControl();
-                panel1.Controls.Add(heroUserControl);
-            }
+            ShowHeros();
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
@@ -145,6 +141,37 @@ namespace YYS_Arrange.Forms
             }
 
             #endregion
+        }
+        /// <summary>
+        /// 展示御魂到面板上
+        /// </summary>
+        private void ShowHeros()
+        {
+            HeroShowInfo heroShowInfo = new HeroShowInfo();
+            int x = 0;
+            int y = 0;
+            int count = 0;
+            for (int i = 0; i < GlobalData.root.data.heroes.Count; i++)
+            {
+                if (GlobalData.root.data.heroes[i].rarity == "SSR" || GlobalData.root.data.heroes[i].rarity == "SR" || GlobalData.root.data.heroes[i].rarity == "SP" )
+                {
+                    heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
+                    heroShowInfo.level = GlobalData.root.data.heroes[i].level;
+                    heroShowInfo.name = GlobalData.root.data.heroes[i].nick_name;
+                    heroShowInfo.rarity = GlobalData.root.data.heroes[i].rarity;
+                    heroShowInfo.star = GlobalData.root.data.heroes[i].star;
+                    heroShowInfo.awake = GlobalData.root.data.heroes[i].awake;
+                    heroShowInfo.count = 1;
+                    HeroUserControl heroUserControl = new HeroUserControl(heroShowInfo);
+                    x = (count % 10) * 126 + 10;
+                    y = (count - count % 10) / 10 * 159 + 10;
+                    heroUserControl.Location = new Point(x, y);
+                    panel1.Controls.Add(heroUserControl);
+
+                    count++;
+                }
+
+            }
         }
 
         private void HeroRarityPic_Click(object sender, EventArgs e)

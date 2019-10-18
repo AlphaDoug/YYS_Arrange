@@ -1,4 +1,5 @@
-﻿namespace YYS_Arrange.Class
+﻿
+namespace YYS_Arrange.Class
 {
     partial class HeroUserControl
     {
@@ -30,25 +31,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HeroUserControl));
             this.HeroInfoPanel = new System.Windows.Forms.Panel();
-            this.HeroStar1 = new System.Windows.Forms.PictureBox();
-            this.HeroRarityPic = new System.Windows.Forms.PictureBox();
             this.HeroNameLabel = new System.Windows.Forms.Label();
+            this.HeroAwakeLabel = new System.Windows.Forms.Label();
+            this.HeroStar1 = new System.Windows.Forms.PictureBox();
             this.HeroStar2 = new System.Windows.Forms.PictureBox();
             this.HeroStar3 = new System.Windows.Forms.PictureBox();
             this.HeroStar4 = new System.Windows.Forms.PictureBox();
             this.HeroStar6 = new System.Windows.Forms.PictureBox();
             this.HeroStar5 = new System.Windows.Forms.PictureBox();
-            this.HeroAwakeLabel = new System.Windows.Forms.Label();
             this.HeroNumLabel = new System.Windows.Forms.Label();
             this.HeroLevelLabel = new System.Windows.Forms.Label();
+            this.HeroRarityPic = new System.Windows.Forms.PictureBox();
             this.HeroInfoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeroRarityPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeroRarityPic)).BeginInit();
             this.SuspendLayout();
             // 
             // HeroInfoPanel
@@ -69,34 +70,6 @@
             this.HeroInfoPanel.Size = new System.Drawing.Size(100, 133);
             this.HeroInfoPanel.TabIndex = 30;
             // 
-            // HeroStar1
-            // 
-            this.HeroStar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.HeroStar1.BackgroundImage = global::YYS_Arrange.Properties.Resources.grey_goyu;
-            this.HeroStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HeroStar1.Location = new System.Drawing.Point(4, 86);
-            this.HeroStar1.Margin = new System.Windows.Forms.Padding(0);
-            this.HeroStar1.Name = "HeroStar1";
-            this.HeroStar1.Size = new System.Drawing.Size(16, 20);
-            this.HeroStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.HeroStar1.TabIndex = 25;
-            this.HeroStar1.TabStop = false;
-            // 
-            // HeroRarityPic
-            // 
-            this.HeroRarityPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.HeroRarityPic.BackColor = System.Drawing.Color.Transparent;
-            this.HeroRarityPic.BackgroundImage = global::YYS_Arrange.Properties.Resources._217;
-            this.HeroRarityPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.HeroRarityPic.Image = ((System.Drawing.Image)(resources.GetObject("HeroRarityPic.Image")));
-            this.HeroRarityPic.Location = new System.Drawing.Point(0, 0);
-            this.HeroRarityPic.Margin = new System.Windows.Forms.Padding(0);
-            this.HeroRarityPic.Name = "HeroRarityPic";
-            this.HeroRarityPic.Size = new System.Drawing.Size(100, 104);
-            this.HeroRarityPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.HeroRarityPic.TabIndex = 18;
-            this.HeroRarityPic.TabStop = false;
-            // 
             // HeroNameLabel
             // 
             this.HeroNameLabel.BackColor = System.Drawing.Color.LightGray;
@@ -109,6 +82,31 @@
             this.HeroNameLabel.TabIndex = 19;
             this.HeroNameLabel.Text = "炼狱茨木童子";
             this.HeroNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // HeroAwakeLabel
+            // 
+            this.HeroAwakeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.HeroAwakeLabel.BackColor = System.Drawing.Color.MediumOrchid;
+            this.HeroAwakeLabel.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.HeroAwakeLabel.Location = new System.Drawing.Point(81, 50);
+            this.HeroAwakeLabel.Name = "HeroAwakeLabel";
+            this.HeroAwakeLabel.Size = new System.Drawing.Size(19, 30);
+            this.HeroAwakeLabel.TabIndex = 26;
+            this.HeroAwakeLabel.Text = "觉";
+            this.HeroAwakeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // HeroStar1
+            // 
+            this.HeroStar1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.HeroStar1.BackgroundImage = global::YYS_Arrange.Properties.Resources.grey_goyu;
+            this.HeroStar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HeroStar1.Location = new System.Drawing.Point(4, 86);
+            this.HeroStar1.Margin = new System.Windows.Forms.Padding(0);
+            this.HeroStar1.Name = "HeroStar1";
+            this.HeroStar1.Size = new System.Drawing.Size(16, 20);
+            this.HeroStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.HeroStar1.TabIndex = 25;
+            this.HeroStar1.TabStop = false;
             // 
             // HeroStar2
             // 
@@ -178,18 +176,6 @@
             this.HeroStar5.TabIndex = 21;
             this.HeroStar5.TabStop = false;
             // 
-            // HeroAwakeLabel
-            // 
-            this.HeroAwakeLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.HeroAwakeLabel.BackColor = System.Drawing.Color.MediumOrchid;
-            this.HeroAwakeLabel.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.HeroAwakeLabel.Location = new System.Drawing.Point(81, 50);
-            this.HeroAwakeLabel.Name = "HeroAwakeLabel";
-            this.HeroAwakeLabel.Size = new System.Drawing.Size(19, 30);
-            this.HeroAwakeLabel.TabIndex = 26;
-            this.HeroAwakeLabel.Text = "觉";
-            this.HeroAwakeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // HeroNumLabel
             // 
             this.HeroNumLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -217,6 +203,21 @@
             this.HeroLevelLabel.Text = "满";
             this.HeroLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // HeroRarityPic
+            // 
+            this.HeroRarityPic.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.HeroRarityPic.BackColor = System.Drawing.Color.Transparent;
+            this.HeroRarityPic.BackgroundImage = global::YYS_Arrange.Properties.Resources._208;
+            this.HeroRarityPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.HeroRarityPic.Image = ((System.Drawing.Image)(resources.GetObject("HeroRarityPic.Image")));
+            this.HeroRarityPic.Location = new System.Drawing.Point(0, 0);
+            this.HeroRarityPic.Margin = new System.Windows.Forms.Padding(0);
+            this.HeroRarityPic.Name = "HeroRarityPic";
+            this.HeroRarityPic.Size = new System.Drawing.Size(100, 104);
+            this.HeroRarityPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.HeroRarityPic.TabIndex = 18;
+            this.HeroRarityPic.TabStop = false;
+            // 
             // HeroUserControl
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -227,12 +228,12 @@
             this.HeroInfoPanel.ResumeLayout(false);
             this.HeroInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.HeroRarityPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HeroRarityPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,5 +252,6 @@
         private System.Windows.Forms.Label HeroNumLabel;
         private System.Windows.Forms.Label HeroLevelLabel;
         private System.Windows.Forms.PictureBox HeroRarityPic;
+
     }
 }

@@ -137,7 +137,6 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.heroUserControl1 = new YYS_Arrange.Class.HeroUserControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
@@ -178,7 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PlayerNameBox
@@ -1270,18 +1268,9 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // heroUserControl1
-            // 
-            this.heroUserControl1.AutoSize = true;
-            this.heroUserControl1.Location = new System.Drawing.Point(3, 3);
-            this.heroUserControl1.Name = "heroUserControl1";
-            this.heroUserControl1.Size = new System.Drawing.Size(106, 139);
-            this.heroUserControl1.TabIndex = 0;
-            // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.heroUserControl1);
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1318, 676);
@@ -1338,8 +1327,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1455,7 +1442,6 @@
         private System.Windows.Forms.PictureBox pictureBox30;
         private System.Windows.Forms.Label NLabel;
         private System.Windows.Forms.Label label60;
-        private Class.HeroUserControl heroUserControl1;
         private System.Windows.Forms.Panel panel1;
     }
 }
