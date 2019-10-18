@@ -28,6 +28,12 @@ namespace YYS_Arrange.Forms
             InitGlobalData();
 
             ShowBaseData();
+
+            for (int i = 0; i < 50; i++)
+            {
+                HeroUserControl heroUserControl = new HeroUserControl();
+                panel1.Controls.Add(heroUserControl);
+            }
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)

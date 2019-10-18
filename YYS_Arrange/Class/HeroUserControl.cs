@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace YYS_Arrange.Class
 {
-    public partial class HeroControlPanel : UserControl
+    public partial class HeroUserControl : UserControl
     {
-        public HeroControlPanel()
+        public HeroUserControl()
         {
             InitializeComponent();
-        }
-
-        private void HeroControlPanel_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

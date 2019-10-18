@@ -55,11 +55,11 @@
   <ItemGroup>
     <Compile Include="Class\DataBase.cs" />
     <Compile Include="Class\GlobalData.cs" />
-    <Compile Include="Class\HeroControlPanel.cs">
+    <Compile Include="Class\HeroUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Class\HeroControlPanel.Designer.cs">
-      <DependentUpon>HeroControlPanel.cs</DependentUpon>
+    <Compile Include="Class\HeroUserControl.Designer.cs">
+      <DependentUpon>HeroUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Tools.cs" />
     <Compile Include="Class\WebHandler.cs" />
@@ -83,8 +83,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Class\HeroControlPanel.resx">
-      <DependentUpon>HeroControlPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Class\HeroUserControl.resx">
+      <DependentUpon>HeroUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EquipsForm.resx">
       <DependentUpon>EquipsForm.cs</DependentUpon>
