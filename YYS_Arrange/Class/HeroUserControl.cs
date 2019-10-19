@@ -198,6 +198,8 @@ namespace YYS_Arrange.Class
             HeroRarityPic.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("_" + ShowInfo.id, null);
 
             HeroNameLabel.Text = ShowInfo.name;
+
+            HeroNumLabel.Text = Tools.Data2String(ShowInfo.count);
         }
         /// <summary>
         /// 设置重叠控件的父控件,以便透明显示

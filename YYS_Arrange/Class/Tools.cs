@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +27,7 @@ namespace YYS_Arrange.Class
         }
         // 从一个Json串生成对象信息
         public static object JsonToObject(string jsonString, object obj)
-        {
+        {          
             try
             {
                 return JsonConvert.DeserializeObject(jsonString, obj.GetType());
@@ -35,8 +36,7 @@ namespace YYS_Arrange.Class
             {
                 return null;
                 throw;
-            }
-            
+            }          
         }
 
         public static string Data2String(string str)

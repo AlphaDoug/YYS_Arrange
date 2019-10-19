@@ -16,8 +16,10 @@ namespace YYS_Arrange.Forms
     /// </summary>
     public partial class EquipsForm : Form
     {
+        private GameConfig gameConfig;
         public EquipsForm()
         {
+            gameConfig = new GameConfig();
             InitializeComponent();
         }
 
@@ -147,6 +149,9 @@ namespace YYS_Arrange.Forms
         /// </summary>
         private void ShowHerosFold()
         {
+            //设置下拉框默认选项
+            RarityComboBox.SelectedIndex = 0;
+            StarComboBox.SelectedIndex = 0;
             //御魂面板上,SP-SSR-SR-R-N顺序,稀有度相同的按照等级,等级相同的按照获得顺序,若两个相同类型的式神经验都是0则可以折叠显示
             HeroShowInfo heroShowInfo = new HeroShowInfo();
             int x = 0;
@@ -160,7 +165,7 @@ namespace YYS_Arrange.Forms
                 heroShowInfo.exp = GlobalData.root.data.heroes[i].exp;
                 heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
                 heroShowInfo.level = GlobalData.root.data.heroes[i].level;
-                heroShowInfo.name = GlobalData.root.data.heroes[i].nick_name;
+                heroShowInfo.name = gameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id);
                 heroShowInfo.rarity = GlobalData.root.data.heroes[i].rarity;
                 heroShowInfo.star = GlobalData.root.data.heroes[i].star;
                 heroShowInfo.awake = GlobalData.root.data.heroes[i].awake;
@@ -383,6 +388,55 @@ namespace YYS_Arrange.Forms
                     return 0;
                    
             }
+        }
+        /// <summary>
+        /// 开始搜索指定名字式神
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StratSearchHero_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 稀有度下拉框选项更改
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RarityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string rarity = string.Empty;
+            switch (RarityComboBox.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    rarity = "SP";
+                    break;
+                case 2:
+                    rarity = "SSR";
+                    break;
+                case 3:
+                    rarity = "SR";
+                    break;
+                case 4:
+                    rarity = "R";
+                    break;
+                case 5:
+                    rarity = "N";
+                    break;
+                default:
+                    break;
+            }
+        }
+        /// <summary>
+        /// 星级下拉框选项更改
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StarComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
