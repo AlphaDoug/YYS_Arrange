@@ -17,6 +17,8 @@ namespace YYS_Arrange.Forms
     public partial class EquipsForm : Form
     {
         private GameConfig gameConfig;
+        //在界面上展示的式神信息,排序生效
+        List<HeroShowInfo> heroShowInfos = new List<HeroShowInfo>();
         public EquipsForm()
         {
             gameConfig = new GameConfig();
@@ -27,11 +29,15 @@ namespace YYS_Arrange.Forms
         {
             tabControl2.DrawMode = TabDrawMode.OwnerDrawFixed;//设置为用户绘制方式
 
+            //设置下拉框默认选项
+            RarityComboBox.Text = "全部";
+            StarComboBox.Text = "全部";
+
             InitGlobalData();
 
             ShowBaseData();
 
-            ShowHerosFold();
+            ShowHerosFold(string.Empty, -1, string.Empty);
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
@@ -145,22 +151,45 @@ namespace YYS_Arrange.Forms
             #endregion
         }
         /// <summary>
-        /// 以折叠形式将式神展示到面板上
+        /// 以折叠形式将所有式神展示到面板上
         /// </summary>
-        private void ShowHerosFold()
+        private void ShowHerosFold(string rarity,int star, string name)
         {
-            //设置下拉框默认选项
-            RarityComboBox.SelectedIndex = 0;
-            StarComboBox.SelectedIndex = 0;
+            //清除面板上所有信息
+            panel1.Controls.Clear();
+            heroShowInfos.Clear();
             //御魂面板上,SP-SSR-SR-R-N顺序,稀有度相同的按照等级,等级相同的按照获得顺序,若两个相同类型的式神经验都是0则可以折叠显示
             HeroShowInfo heroShowInfo = new HeroShowInfo();
             int x = 0;
             int y = 0;
             int count = 0;
-            //在界面上展示的式神信息,排序生效
-            List<HeroShowInfo> heroShowInfos = new List<HeroShowInfo>(); 
+            //将式神信息放入list中
             for (int i = 0; i < GlobalData.root.data.heroes.Count; i++)
             {
+
+                if (rarity != string.Empty)
+                {
+                    if (GlobalData.root.data.heroes[i].rarity != rarity)
+                    {
+                        continue;
+                    }
+                }
+
+                if (star != -1)
+                {
+                    if (GlobalData.root.data.heroes[i].star != star)
+                    {
+                        continue;
+                    }
+                }
+
+                if (name != string.Empty)
+                {
+                    if (!gameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id).Contains(name))
+                    {
+                        continue;
+                    }
+                }
                 heroShowInfo.born = GlobalData.root.data.heroes[i].born;
                 heroShowInfo.exp = GlobalData.root.data.heroes[i].exp;
                 heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
@@ -186,6 +215,7 @@ namespace YYS_Arrange.Forms
                     }
                 }
             }
+
 
             for (int i = 0; i < heroShowInfos.Count; i++)
             {
@@ -389,25 +419,42 @@ namespace YYS_Arrange.Forms
                    
             }
         }
-        /// <summary>
-        /// 开始搜索指定名字式神
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StratSearchHero_Click(object sender, EventArgs e)
-        {
 
-        }
         /// <summary>
-        /// 稀有度下拉框选项更改
+        /// 下拉框选项更改
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void RarityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            int star = -1;
+            switch (StarComboBox.SelectedIndex)
+            {
+                case -1:
+                case 0:
+                    break;
+                case 1:
+                    star = 6;
+                    break;
+                case 2:
+                    star = 5;
+                    break;
+                case 3:
+                    star = 4;
+                    break;
+                case 4:
+                    star = 3;
+                    break;
+                case 5:
+                    star = 2;
+                    break;
+                default:
+                    break;
+            }
             string rarity = string.Empty;
             switch (RarityComboBox.SelectedIndex)
             {
+                case -1:
                 case 0:
                     break;
                 case 1:
@@ -428,15 +475,10 @@ namespace YYS_Arrange.Forms
                 default:
                     break;
             }
+            string name = HeroNameSearchTextBox.Text;
+            
+            ShowHerosFold(rarity, star, name);
         }
-        /// <summary>
-        /// 星级下拉框选项更改
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void StarComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }
