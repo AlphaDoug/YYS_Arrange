@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YYS_Arrange.Forms;
 
 namespace YYS_Arrange.Class
 {
@@ -18,6 +19,10 @@ namespace YYS_Arrange.Class
             InitializeComponent();
             SetParent();
             HeroShowInfo();
+            foreach (Control item in Controls)
+            {
+                item.Click += HeroUserControl_Click;
+            }
         }
 
         private HeroShowInfo ShowInfo;
@@ -214,6 +219,24 @@ namespace YYS_Arrange.Class
             HeroStar6.Parent = HeroRarityPic;
             HeroLevelLabel.Parent = HeroRarityPic;
             HeroNumLabel.Parent = HeroRarityPic; 
+        }
+
+        private void HeroUserControl_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// 点击式神打开详细信息界面
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void HeroUserControl_Click(object sender, EventArgs e)
+        {
+
+            HeroUserControl heroUserControl = sender as HeroUserControl;
+            string id = heroUserControl.Tag as string;
+            HeroInfoForm heroInfoForm = new HeroInfoForm(id);
+            heroInfoForm.ShowDialog();
         }
     }
 }

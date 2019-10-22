@@ -8,6 +8,7 @@ namespace YYS_Arrange.Class
 {
     public struct HeroShowInfo
     {
+        public string hero_id;
         public int id;
         public int star;
         public int level;

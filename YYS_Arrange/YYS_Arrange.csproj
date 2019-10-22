@@ -53,10 +53,16 @@
     <Compile Include="Class\DataBase.cs" />
     <Compile Include="Class\GameConfig.cs" />
     <Compile Include="Class\GlobalData.cs" />
-    <Compile Include="Class\HeroUserControl.cs">
+    <Compile Include="Controls\EquipsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Class\HeroUserControl.Designer.cs">
+    <Compile Include="Controls\EquipsControl.Designer.cs">
+      <DependentUpon>EquipsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeroUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HeroUserControl.Designer.cs">
       <DependentUpon>HeroUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\Tools.cs" />
@@ -87,7 +93,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Class\HeroUserControl.resx">
+    <EmbeddedResource Include="Controls\EquipsControl.resx">
+      <DependentUpon>EquipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HeroUserControl.resx">
       <DependentUpon>HeroUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\EquipsForm.resx">
@@ -296,6 +305,63 @@
     <None Include="Res\Heros\411.png" />
     <None Include="Res\Heros\412.png" />
     <None Include="Res\Heros\413.png" />
+    <None Include="Res\attack_icon.png" />
+    <None Include="Res\attr_S.png" />
+    <None Include="Res\attr_A.png" />
+    <None Include="Res\attr_B.png" />
+    <None Include="Res\attr_C.png" />
+    <None Include="Res\attr_D.png" />
+    <None Include="Res\attr_SS.png" />
+    <None Include="Res\crit_icon.png" />
+    <None Include="Res\def_icon.png" />
+    <None Include="Res\hp_icon.png" />
+    <None Include="Res\speed_icon.png" />
+    <None Include="Res\equip-_border_pos1.png" />
+    <None Include="Res\equip-_border_pos2.png" />
+    <None Include="Res\equip-_border_pos3.png" />
+    <None Include="Res\equip-_border_pos4.png" />
+    <None Include="Res\equip-_border_pos5.png" />
+    <None Include="Res\equip-_border_pos6.png" />
+    <None Include="Res\Equips\300002.png" />
+    <None Include="Res\Equips\300003.png" />
+    <None Include="Res\Equips\300004.png" />
+    <None Include="Res\Equips\300006.png" />
+    <None Include="Res\Equips\300007.png" />
+    <None Include="Res\Equips\300008.png" />
+    <None Include="Res\Equips\300009.png" />
+    <None Include="Res\Equips\300010.png" />
+    <None Include="Res\Equips\300011.png" />
+    <None Include="Res\Equips\300012.png" />
+    <None Include="Res\Equips\300013.png" />
+    <None Include="Res\Equips\300014.png" />
+    <None Include="Res\Equips\300015.png" />
+    <None Include="Res\Equips\300018.png" />
+    <None Include="Res\Equips\300019.png" />
+    <None Include="Res\Equips\300020.png" />
+    <None Include="Res\Equips\300021.png" />
+    <None Include="Res\Equips\300022.png" />
+    <None Include="Res\Equips\300023.png" />
+    <None Include="Res\Equips\300024.png" />
+    <None Include="Res\Equips\300026.png" />
+    <None Include="Res\Equips\300027.png" />
+    <None Include="Res\Equips\300029.png" />
+    <None Include="Res\Equips\300030.png" />
+    <None Include="Res\Equips\300031.png" />
+    <None Include="Res\Equips\300032.png" />
+    <None Include="Res\Equips\300033.png" />
+    <None Include="Res\Equips\300034.png" />
+    <None Include="Res\Equips\300035.png" />
+    <None Include="Res\Equips\300036.png" />
+    <None Include="Res\Equips\300039.png" />
+    <None Include="Res\Equips\300048.png" />
+    <None Include="Res\Equips\300049.png" />
+    <None Include="Res\Equips\300050.png" />
+    <None Include="Res\Equips\300051.png" />
+    <None Include="Res\Equips\300052.png" />
+    <None Include="Res\Equips\300053.png" />
+    <None Include="Res\Equips\300054.png" />
+    <None Include="Res\Equips\300077.png" />
+    <None Include="Res\Skills\3251.png" />
     <Content Include="Res\山兔1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

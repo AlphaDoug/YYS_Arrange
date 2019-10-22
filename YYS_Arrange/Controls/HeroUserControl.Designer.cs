@@ -227,6 +227,8 @@ namespace YYS_Arrange.Class
             this.Controls.Add(this.HeroInfoPanel);
             this.Name = "HeroUserControl";
             this.Size = new System.Drawing.Size(106, 139);
+            this.Click += new System.EventHandler(this.HeroUserControl_Click);
+            this.DoubleClick += new System.EventHandler(this.HeroUserControl_DoubleClick);
             this.HeroInfoPanel.ResumeLayout(false);
             this.HeroInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar1)).EndInit();

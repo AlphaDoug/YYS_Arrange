@@ -628,4 +628,175 @@
   <data name="_413" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Res\Heros\413.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="attack_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attack_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_S" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_S.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attr_SS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\attr_SS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crit_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\crit_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="def_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\def_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="equip__border_pos6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\equip-_border_pos6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hp_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\hp_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speed_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\speed_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300003.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300004.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300006.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300007.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300008.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300009.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300010.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300012.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300013.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300014.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300015.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300018.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300019" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300019.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300020" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300020.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300023" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300024" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300026" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300026.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300027" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300029" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300029.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300030.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300031" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300032" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300033" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300033.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300034.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300035" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300035.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300036.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300039" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300039.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300048" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300048.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300049" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300049.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300050.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300051" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300052" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300052.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300053" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300053.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_300077" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Equips\300077.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_3251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Res\Skills\3251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

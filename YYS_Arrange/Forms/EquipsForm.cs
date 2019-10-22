@@ -16,12 +16,10 @@ namespace YYS_Arrange.Forms
     /// </summary>
     public partial class EquipsForm : Form
     {
-        private GameConfig gameConfig;
         //在界面上展示的式神信息,排序生效
         List<HeroShowInfo> heroShowInfos = new List<HeroShowInfo>();
         public EquipsForm()
         {
-            gameConfig = new GameConfig();
             InitializeComponent();
         }
 
@@ -185,16 +183,17 @@ namespace YYS_Arrange.Forms
 
                 if (name != string.Empty)
                 {
-                    if (!gameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id).Contains(name))
+                    if (!GameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id).Contains(name))
                     {
                         continue;
                     }
                 }
+                heroShowInfo.hero_id = GlobalData.root.data.heroes[i].id;
                 heroShowInfo.born = GlobalData.root.data.heroes[i].born;
                 heroShowInfo.exp = GlobalData.root.data.heroes[i].exp;
                 heroShowInfo.id = GlobalData.root.data.heroes[i].hero_id;
                 heroShowInfo.level = GlobalData.root.data.heroes[i].level;
-                heroShowInfo.name = gameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id);
+                heroShowInfo.name = GameConfig.GetHeroName(GlobalData.root.data.heroes[i].hero_id);
                 heroShowInfo.rarity = GlobalData.root.data.heroes[i].rarity;
                 heroShowInfo.star = GlobalData.root.data.heroes[i].star;
                 heroShowInfo.awake = GlobalData.root.data.heroes[i].awake;
@@ -227,6 +226,7 @@ namespace YYS_Arrange.Forms
                 x = (count % 10) * 126 + 10;
                 y = (count - count % 10) / 10 * 159 + 10;
                 heroUserControl.Location = new Point(x, y);
+                heroUserControl.Tag = heroShowInfos[i].hero_id;
                 panel1.Controls.Add(heroUserControl);
 
                 count++;
