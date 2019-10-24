@@ -220,11 +220,6 @@ namespace YYS_Arrange.Class
             HeroLevelLabel.Parent = HeroRarityPic;
             HeroNumLabel.Parent = HeroRarityPic; 
         }
-
-        private void HeroUserControl_DoubleClick(object sender, EventArgs e)
-        {
-
-        }
         /// <summary>
         /// 点击式神打开详细信息界面
         /// </summary>
@@ -232,9 +227,7 @@ namespace YYS_Arrange.Class
         /// <param name="e"></param>
         private void HeroUserControl_Click(object sender, EventArgs e)
         {
-
-            HeroUserControl heroUserControl = sender as HeroUserControl;
-            string id = heroUserControl.Tag as string;
+            string id = Tag as string;
             HeroInfoForm heroInfoForm = new HeroInfoForm(id);
             heroInfoForm.ShowDialog();
         }

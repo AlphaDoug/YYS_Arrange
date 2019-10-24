@@ -82,6 +82,7 @@ namespace YYS_Arrange.Class
             this.HeroStar1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar1.TabIndex = 25;
             this.HeroStar1.TabStop = false;
+            this.HeroStar1.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroNameLabel
             // 
@@ -95,6 +96,7 @@ namespace YYS_Arrange.Class
             this.HeroNameLabel.TabIndex = 19;
             this.HeroNameLabel.Text = "炼狱茨木童子";
             this.HeroNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HeroNameLabel.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroStar2
             // 
@@ -109,6 +111,7 @@ namespace YYS_Arrange.Class
             this.HeroStar2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar2.TabIndex = 24;
             this.HeroStar2.TabStop = false;
+            this.HeroStar2.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroStar3
             // 
@@ -122,6 +125,7 @@ namespace YYS_Arrange.Class
             this.HeroStar3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar3.TabIndex = 23;
             this.HeroStar3.TabStop = false;
+            this.HeroStar3.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroStar4
             // 
@@ -136,6 +140,7 @@ namespace YYS_Arrange.Class
             this.HeroStar4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar4.TabIndex = 22;
             this.HeroStar4.TabStop = false;
+            this.HeroStar4.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroStar6
             // 
@@ -150,6 +155,7 @@ namespace YYS_Arrange.Class
             this.HeroStar6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar6.TabIndex = 20;
             this.HeroStar6.TabStop = false;
+            this.HeroStar6.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroStar5
             // 
@@ -163,6 +169,7 @@ namespace YYS_Arrange.Class
             this.HeroStar5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroStar5.TabIndex = 21;
             this.HeroStar5.TabStop = false;
+            this.HeroStar5.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroAwakeLabel
             // 
@@ -175,6 +182,7 @@ namespace YYS_Arrange.Class
             this.HeroAwakeLabel.TabIndex = 26;
             this.HeroAwakeLabel.Text = "觉";
             this.HeroAwakeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HeroAwakeLabel.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroNumLabel
             // 
@@ -189,6 +197,7 @@ namespace YYS_Arrange.Class
             this.HeroNumLabel.TabIndex = 28;
             this.HeroNumLabel.Text = "110";
             this.HeroNumLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.HeroNumLabel.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroLevelLabel
             // 
@@ -204,6 +213,7 @@ namespace YYS_Arrange.Class
             this.HeroLevelLabel.TabIndex = 27;
             this.HeroLevelLabel.Text = "满";
             this.HeroLevelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HeroLevelLabel.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroRarityPic
             // 
@@ -219,6 +229,7 @@ namespace YYS_Arrange.Class
             this.HeroRarityPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.HeroRarityPic.TabIndex = 18;
             this.HeroRarityPic.TabStop = false;
+            this.HeroRarityPic.Click += new System.EventHandler(this.HeroUserControl_Click);
             // 
             // HeroUserControl
             // 
@@ -228,7 +239,6 @@ namespace YYS_Arrange.Class
             this.Name = "HeroUserControl";
             this.Size = new System.Drawing.Size(106, 139);
             this.Click += new System.EventHandler(this.HeroUserControl_Click);
-            this.DoubleClick += new System.EventHandler(this.HeroUserControl_DoubleClick);
             this.HeroInfoPanel.ResumeLayout(false);
             this.HeroInfoPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HeroStar1)).EndInit();

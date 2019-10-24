@@ -53,31 +53,31 @@
             this.Attack_CritDamageLabel = new System.Windows.Forms.Label();
             this.HP_CritDamageLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.Equip6Lv = new System.Windows.Forms.Label();
+            this.Equip1Lv = new System.Windows.Forms.Label();
+            this.Equip2Lv = new System.Windows.Forms.Label();
+            this.Equip3Lv = new System.Windows.Forms.Label();
+            this.Equip4Lv = new System.Windows.Forms.Label();
+            this.Equip5Lv = new System.Windows.Forms.Label();
             this.Equip_Pos4_Pic = new System.Windows.Forms.PictureBox();
             this.Equip_Pos6_Pic = new System.Windows.Forms.PictureBox();
             this.Equip_Pos5_Pic = new System.Windows.Forms.PictureBox();
             this.Equip_Pos2_Pic = new System.Windows.Forms.PictureBox();
             this.Equip_Pos3_Pic = new System.Windows.Forms.PictureBox();
             this.Equip_Pos1_Pic = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos5_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos4_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos2_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos3_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos6_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos1_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.Skill2Label = new System.Windows.Forms.Label();
+            this.Skill3Label = new System.Windows.Forms.Label();
+            this.Skill1Label = new System.Windows.Forms.Label();
+            this.Skill3PictureBox = new System.Windows.Forms.PictureBox();
+            this.Skill2PictureBox = new System.Windows.Forms.PictureBox();
+            this.Skill1PictureBox = new System.Windows.Forms.PictureBox();
             this.CritIconPic = new System.Windows.Forms.PictureBox();
             this.SpeedIconPic = new System.Windows.Forms.PictureBox();
             this.DefIconPic = new System.Windows.Forms.PictureBox();
@@ -90,21 +90,21 @@
             this.AttackIconPic = new System.Windows.Forms.PictureBox();
             this.HeroPic = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill3PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill2PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill1PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CritIconPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedIconPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefIconPic)).BeginInit();
@@ -361,173 +361,94 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.label16);
-            this.panel1.Controls.Add(this.label15);
-            this.panel1.Controls.Add(this.label14);
+            this.panel1.Controls.Add(this.Equip6Lv);
+            this.panel1.Controls.Add(this.Equip1Lv);
+            this.panel1.Controls.Add(this.Equip2Lv);
+            this.panel1.Controls.Add(this.Equip3Lv);
+            this.panel1.Controls.Add(this.Equip4Lv);
+            this.panel1.Controls.Add(this.Equip5Lv);
             this.panel1.Controls.Add(this.Equip_Pos4_Pic);
             this.panel1.Controls.Add(this.Equip_Pos6_Pic);
             this.panel1.Controls.Add(this.Equip_Pos5_Pic);
             this.panel1.Controls.Add(this.Equip_Pos2_Pic);
             this.panel1.Controls.Add(this.Equip_Pos3_Pic);
             this.panel1.Controls.Add(this.Equip_Pos1_Pic);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Equip_Pos5_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos4_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos2_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos3_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos6_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos1_Pic_Bg);
             this.panel1.Location = new System.Drawing.Point(302, 43);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(240, 195);
             this.panel1.TabIndex = 4;
             // 
-            // label12
+            // Equip6Lv
             // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(61, 10);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(50, 19);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "+10";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Equip6Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip6Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip6Lv.Location = new System.Drawing.Point(130, 10);
+            this.Equip6Lv.Name = "Equip6Lv";
+            this.Equip6Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip6Lv.TabIndex = 1;
+            this.Equip6Lv.Text = "+10";
+            this.Equip6Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label13
+            // Equip1Lv
             // 
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(130, 10);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 19);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "+10";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Equip1Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip1Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip1Lv.Location = new System.Drawing.Point(61, 10);
+            this.Equip1Lv.Name = "Equip1Lv";
+            this.Equip1Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip1Lv.TabIndex = 1;
+            this.Equip1Lv.Text = "+10";
+            this.Equip1Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label14
+            // Equip2Lv
             // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label14.Location = new System.Drawing.Point(161, 72);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(50, 19);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "+10";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Equip2Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip2Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip2Lv.Location = new System.Drawing.Point(21, 69);
+            this.Equip2Lv.Name = "Equip2Lv";
+            this.Equip2Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip2Lv.TabIndex = 1;
+            this.Equip2Lv.Text = "+10";
+            this.Equip2Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label15
+            // Equip3Lv
             // 
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(130, 137);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(50, 19);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "+10";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Equip3Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip3Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip3Lv.Location = new System.Drawing.Point(61, 137);
+            this.Equip3Lv.Name = "Equip3Lv";
+            this.Equip3Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip3Lv.TabIndex = 1;
+            this.Equip3Lv.Text = "+10";
+            this.Equip3Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label16
+            // Equip4Lv
             // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(61, 137);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(50, 19);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "+10";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Equip4Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip4Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip4Lv.Location = new System.Drawing.Point(130, 137);
+            this.Equip4Lv.Name = "Equip4Lv";
+            this.Equip4Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip4Lv.TabIndex = 1;
+            this.Equip4Lv.Text = "+10";
+            this.Equip4Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label17
+            // Equip5Lv
             // 
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label17.Location = new System.Drawing.Point(21, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 19);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "+10";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(288, 322);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(271, 25);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "获取时间 2014-05-07 22:00";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
-            this.label21.Location = new System.Drawing.Point(397, 258);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(20, 20);
-            this.label21.TabIndex = 6;
-            this.label21.Text = "5";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
-            this.label20.Location = new System.Drawing.Point(462, 258);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(20, 20);
-            this.label20.TabIndex = 6;
-            this.label20.Text = "5";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
-            this.label19.Location = new System.Drawing.Point(332, 258);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(20, 20);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "5";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::YYS_Arrange.Properties.Resources._3251;
-            this.pictureBox9.Location = new System.Drawing.Point(462, 258);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 5;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::YYS_Arrange.Properties.Resources._3251;
-            this.pictureBox8.Location = new System.Drawing.Point(397, 258);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::YYS_Arrange.Properties.Resources._3251;
-            this.pictureBox7.Location = new System.Drawing.Point(332, 258);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
+            this.Equip5Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip5Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip5Lv.Location = new System.Drawing.Point(161, 72);
+            this.Equip5Lv.Name = "Equip5Lv";
+            this.Equip5Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip5Lv.TabIndex = 1;
+            this.Equip5Lv.Text = "+10";
+            this.Equip5Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Equip_Pos4_Pic
             // 
@@ -595,71 +516,151 @@
             this.Equip_Pos1_Pic.TabIndex = 2;
             this.Equip_Pos1_Pic.TabStop = false;
             // 
-            // pictureBox6
+            // Equip_Pos5_Pic_Bg
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos5;
-            this.pictureBox6.Location = new System.Drawing.Point(164, 72);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(59, 50);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.Equip_Pos5_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos5_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos5;
+            this.Equip_Pos5_Pic_Bg.Location = new System.Drawing.Point(164, 72);
+            this.Equip_Pos5_Pic_Bg.Name = "Equip_Pos5_Pic_Bg";
+            this.Equip_Pos5_Pic_Bg.Size = new System.Drawing.Size(59, 50);
+            this.Equip_Pos5_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos5_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos5_Pic_Bg.TabStop = false;
             // 
-            // pictureBox4
+            // Equip_Pos4_Pic_Bg
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos4;
-            this.pictureBox4.Location = new System.Drawing.Point(130, 137);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.Equip_Pos4_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos4_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos4;
+            this.Equip_Pos4_Pic_Bg.Location = new System.Drawing.Point(130, 137);
+            this.Equip_Pos4_Pic_Bg.Name = "Equip_Pos4_Pic_Bg";
+            this.Equip_Pos4_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos4_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos4_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos4_Pic_Bg.TabStop = false;
             // 
-            // pictureBox5
+            // Equip_Pos2_Pic_Bg
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos2;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 72);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(64, 50);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.Equip_Pos2_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos2_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos2;
+            this.Equip_Pos2_Pic_Bg.Location = new System.Drawing.Point(12, 72);
+            this.Equip_Pos2_Pic_Bg.Name = "Equip_Pos2_Pic_Bg";
+            this.Equip_Pos2_Pic_Bg.Size = new System.Drawing.Size(64, 50);
+            this.Equip_Pos2_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos2_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos2_Pic_Bg.TabStop = false;
             // 
-            // pictureBox3
+            // Equip_Pos3_Pic_Bg
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos3;
-            this.pictureBox3.Location = new System.Drawing.Point(61, 137);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.Equip_Pos3_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos3_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos3;
+            this.Equip_Pos3_Pic_Bg.Location = new System.Drawing.Point(61, 137);
+            this.Equip_Pos3_Pic_Bg.Name = "Equip_Pos3_Pic_Bg";
+            this.Equip_Pos3_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos3_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos3_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos3_Pic_Bg.TabStop = false;
             // 
-            // pictureBox2
+            // Equip_Pos6_Pic_Bg
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos6;
-            this.pictureBox2.Location = new System.Drawing.Point(130, 10);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.Equip_Pos6_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos6_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos6;
+            this.Equip_Pos6_Pic_Bg.Location = new System.Drawing.Point(130, 10);
+            this.Equip_Pos6_Pic_Bg.Name = "Equip_Pos6_Pic_Bg";
+            this.Equip_Pos6_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos6_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos6_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos6_Pic_Bg.TabStop = false;
             // 
-            // pictureBox1
+            // Equip_Pos1_Pic_Bg
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos1;
-            this.pictureBox1.Location = new System.Drawing.Point(61, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.Equip_Pos1_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos1_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos1;
+            this.Equip_Pos1_Pic_Bg.Location = new System.Drawing.Point(61, 10);
+            this.Equip_Pos1_Pic_Bg.Name = "Equip_Pos1_Pic_Bg";
+            this.Equip_Pos1_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos1_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos1_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos1_Pic_Bg.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label18.Location = new System.Drawing.Point(288, 322);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(271, 25);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "获取时间 2014-05-07 22:00";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Skill2Label
+            // 
+            this.Skill2Label.BackColor = System.Drawing.Color.Transparent;
+            this.Skill2Label.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Skill2Label.ForeColor = System.Drawing.Color.White;
+            this.Skill2Label.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
+            this.Skill2Label.Location = new System.Drawing.Point(397, 258);
+            this.Skill2Label.Name = "Skill2Label";
+            this.Skill2Label.Size = new System.Drawing.Size(20, 20);
+            this.Skill2Label.TabIndex = 6;
+            this.Skill2Label.Text = "5";
+            this.Skill2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Skill3Label
+            // 
+            this.Skill3Label.BackColor = System.Drawing.Color.Transparent;
+            this.Skill3Label.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Skill3Label.ForeColor = System.Drawing.Color.White;
+            this.Skill3Label.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
+            this.Skill3Label.Location = new System.Drawing.Point(462, 258);
+            this.Skill3Label.Name = "Skill3Label";
+            this.Skill3Label.Size = new System.Drawing.Size(20, 20);
+            this.Skill3Label.TabIndex = 6;
+            this.Skill3Label.Text = "5";
+            this.Skill3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Skill1Label
+            // 
+            this.Skill1Label.BackColor = System.Drawing.Color.Transparent;
+            this.Skill1Label.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Skill1Label.ForeColor = System.Drawing.Color.White;
+            this.Skill1Label.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
+            this.Skill1Label.Location = new System.Drawing.Point(332, 258);
+            this.Skill1Label.Name = "Skill1Label";
+            this.Skill1Label.Size = new System.Drawing.Size(20, 20);
+            this.Skill1Label.TabIndex = 6;
+            this.Skill1Label.Text = "5";
+            this.Skill1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Skill3PictureBox
+            // 
+            this.Skill3PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.Skill3PictureBox.Image = global::YYS_Arrange.Properties.Resources._3251;
+            this.Skill3PictureBox.Location = new System.Drawing.Point(462, 258);
+            this.Skill3PictureBox.Name = "Skill3PictureBox";
+            this.Skill3PictureBox.Size = new System.Drawing.Size(50, 50);
+            this.Skill3PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Skill3PictureBox.TabIndex = 5;
+            this.Skill3PictureBox.TabStop = false;
+            // 
+            // Skill2PictureBox
+            // 
+            this.Skill2PictureBox.Image = global::YYS_Arrange.Properties.Resources._3251;
+            this.Skill2PictureBox.Location = new System.Drawing.Point(397, 258);
+            this.Skill2PictureBox.Name = "Skill2PictureBox";
+            this.Skill2PictureBox.Size = new System.Drawing.Size(50, 50);
+            this.Skill2PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Skill2PictureBox.TabIndex = 5;
+            this.Skill2PictureBox.TabStop = false;
+            // 
+            // Skill1PictureBox
+            // 
+            this.Skill1PictureBox.Image = global::YYS_Arrange.Properties.Resources._3251;
+            this.Skill1PictureBox.Location = new System.Drawing.Point(332, 258);
+            this.Skill1PictureBox.Name = "Skill1PictureBox";
+            this.Skill1PictureBox.Size = new System.Drawing.Size(50, 50);
+            this.Skill1PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Skill1PictureBox.TabIndex = 5;
+            this.Skill1PictureBox.TabStop = false;
             // 
             // CritIconPic
             // 
@@ -776,13 +777,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 361);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
+            this.ClientSize = new System.Drawing.Size(548, 361);
+            this.Controls.Add(this.Skill2Label);
+            this.Controls.Add(this.Skill3Label);
+            this.Controls.Add(this.Skill1Label);
+            this.Controls.Add(this.Skill3PictureBox);
+            this.Controls.Add(this.Skill2PictureBox);
+            this.Controls.Add(this.Skill1PictureBox);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -828,21 +829,21 @@
             this.Text = "HeroInfoForm";
             this.Load += new System.EventHandler(this.HeroInfoForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill3PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill2PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Skill1PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CritIconPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpeedIconPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DefIconPic)).EndInit();
@@ -896,30 +897,30 @@
         private System.Windows.Forms.Label Attack_CritDamageLabel;
         private System.Windows.Forms.Label HP_CritDamageLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox Equip_Pos1_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos5_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos4_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos2_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos3_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos6_Pic_Bg;
+        private System.Windows.Forms.Label Equip2Lv;
+        private System.Windows.Forms.Label Equip3Lv;
+        private System.Windows.Forms.Label Equip4Lv;
+        private System.Windows.Forms.Label Equip5Lv;
+        private System.Windows.Forms.Label Equip6Lv;
+        private System.Windows.Forms.Label Equip1Lv;
         private System.Windows.Forms.PictureBox Equip_Pos1_Pic;
         private System.Windows.Forms.PictureBox Equip_Pos4_Pic;
         private System.Windows.Forms.PictureBox Equip_Pos6_Pic;
         private System.Windows.Forms.PictureBox Equip_Pos5_Pic;
         private System.Windows.Forms.PictureBox Equip_Pos2_Pic;
         private System.Windows.Forms.PictureBox Equip_Pos3_Pic;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox Skill1PictureBox;
+        private System.Windows.Forms.PictureBox Skill2PictureBox;
+        private System.Windows.Forms.PictureBox Skill3PictureBox;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label Skill1Label;
+        private System.Windows.Forms.Label Skill3Label;
+        private System.Windows.Forms.Label Skill2Label;
     }
 }

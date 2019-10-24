@@ -82,5 +82,31 @@ namespace YYS_Arrange.Class
                 return m.ToString();
             }
         }
+
+        /// <summary>
+        /// 执行JS
+        /// </summary>
+        /// <param name="sExpression">参数体</param>
+        /// <param name="sCode">JavaScript代码的字符串</param>
+        /// <returns></returns>
+        private string ExecuteScript(string sExpression, string sCode)
+        {
+            MSScriptControl.ScriptControl scriptControl = new MSScriptControl.ScriptControl
+            {
+                UseSafeSubset = true,
+                Language = "JScript"
+            };
+            scriptControl.AddCode(sCode);
+            try
+            {
+                string str = scriptControl.Eval(sExpression).ToString();
+                return str;
+            }
+            catch (Exception ex)
+            {
+                string str = ex.Message;
+            }
+            return null;
+        }
     }
 }
