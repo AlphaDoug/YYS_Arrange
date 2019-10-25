@@ -17,7 +17,7 @@ namespace YYS_Arrange.Class
         public string name;
         public string rarity;
         public bool awake;
-        public int born;
+        public long born;
     }
 
     public class Currency
@@ -251,19 +251,19 @@ namespace YYS_Arrange.Class
     public class Attack
     {
         /// <summary>
-        /// 
+        /// 攻击加成比率
         /// </summary>
         public double add_rate { get; set; }
         /// <summary>
-        /// 
+        /// 攻击增加数值
         /// </summary>
         public double add_value { get; set; }
         /// <summary>
-        /// 
+        /// 基础攻击
         /// </summary>
         public double @base { get; set; }
         /// <summary>
-        /// 
+        /// 最终攻击力
         /// </summary>
         public double value { get; set; }
     }
@@ -371,35 +371,35 @@ namespace YYS_Arrange.Class
     public class Attrs
     {
         /// <summary>
-        /// 
+        /// 攻击
         /// </summary>
         public Attack attack { get; set; }
         /// <summary>
-        /// 
+        /// 暴击伤害
         /// </summary>
         public Crit_power crit_power { get; set; }
         /// <summary>
-        /// 
+        /// 暴击率
         /// </summary>
         public Crit_rate crit_rate { get; set; }
         /// <summary>
-        /// 
+        /// 防御
         /// </summary>
         public Defense defense { get; set; }
         /// <summary>
-        /// 
+        /// 效果抵抗
         /// </summary>
         public double effect_hit_rate { get; set; }
         /// <summary>
-        /// 
+        /// 效果命中
         /// </summary>
         public double effect_resist_rate { get; set; }
         /// <summary>
-        /// 
+        /// 最大生命值
         /// </summary>
         public Max_hp max_hp { get; set; }
         /// <summary>
-        /// 
+        /// 速度
         /// </summary>
         public Speed speed { get; set; }
     }
@@ -429,7 +429,7 @@ namespace YYS_Arrange.Class
         /// <summary>
         /// 
         /// </summary>
-        public int born { get; set; }
+        public long born { get; set; }
         /// <summary>
         /// 
         /// </summary>

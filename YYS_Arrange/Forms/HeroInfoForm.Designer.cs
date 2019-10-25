@@ -71,7 +71,7 @@
             this.Equip_Pos3_Pic_Bg = new System.Windows.Forms.PictureBox();
             this.Equip_Pos6_Pic_Bg = new System.Windows.Forms.PictureBox();
             this.Equip_Pos1_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.label18 = new System.Windows.Forms.Label();
+            this.BornTimeLabel = new System.Windows.Forms.Label();
             this.Skill2Label = new System.Windows.Forms.Label();
             this.Skill3Label = new System.Windows.Forms.Label();
             this.Skill1Label = new System.Windows.Forms.Label();
@@ -582,15 +582,15 @@
             this.Equip_Pos1_Pic_Bg.TabIndex = 0;
             this.Equip_Pos1_Pic_Bg.TabStop = false;
             // 
-            // label18
+            // BornTimeLabel
             // 
-            this.label18.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label18.Location = new System.Drawing.Point(288, 322);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(271, 25);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "获取时间 2014-05-07 22:00";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BornTimeLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.BornTimeLabel.Location = new System.Drawing.Point(288, 322);
+            this.BornTimeLabel.Name = "BornTimeLabel";
+            this.BornTimeLabel.Size = new System.Drawing.Size(271, 25);
+            this.BornTimeLabel.TabIndex = 3;
+            this.BornTimeLabel.Text = "获取时间 2014-05-07 22:00";
+            this.BornTimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Skill2Label
             // 
@@ -620,7 +620,7 @@
             // 
             // Skill1Label
             // 
-            this.Skill1Label.BackColor = System.Drawing.Color.Transparent;
+            this.Skill1Label.BackColor = System.Drawing.SystemColors.Control;
             this.Skill1Label.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Skill1Label.ForeColor = System.Drawing.Color.White;
             this.Skill1Label.Image = global::YYS_Arrange.Properties.Resources.hero_levelBg;
@@ -654,7 +654,9 @@
             // 
             // Skill1PictureBox
             // 
-            this.Skill1PictureBox.Image = global::YYS_Arrange.Properties.Resources._3251;
+            this.Skill1PictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.Skill1PictureBox.BackgroundImage = global::YYS_Arrange.Properties.Resources._3251;
+            this.Skill1PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Skill1PictureBox.Location = new System.Drawing.Point(332, 258);
             this.Skill1PictureBox.Name = "Skill1PictureBox";
             this.Skill1PictureBox.Size = new System.Drawing.Size(50, 50);
@@ -778,12 +780,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(548, 361);
-            this.Controls.Add(this.Skill2Label);
-            this.Controls.Add(this.Skill3Label);
-            this.Controls.Add(this.Skill1Label);
             this.Controls.Add(this.Skill3PictureBox);
             this.Controls.Add(this.Skill2PictureBox);
             this.Controls.Add(this.Skill1PictureBox);
+            this.Controls.Add(this.Skill1Label);
+            this.Controls.Add(this.Skill2Label);
+            this.Controls.Add(this.Skill3Label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -794,7 +796,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label18);
+            this.Controls.Add(this.BornTimeLabel);
             this.Controls.Add(this.HP_CritDamageLabel);
             this.Controls.Add(this.Attack_CritDamageLabel);
             this.Controls.Add(this.EffectResistAttrLabel);
@@ -918,7 +920,7 @@
         private System.Windows.Forms.PictureBox Skill1PictureBox;
         private System.Windows.Forms.PictureBox Skill2PictureBox;
         private System.Windows.Forms.PictureBox Skill3PictureBox;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label BornTimeLabel;
         private System.Windows.Forms.Label Skill1Label;
         private System.Windows.Forms.Label Skill3Label;
         private System.Windows.Forms.Label Skill2Label;

@@ -10,7 +10,7 @@ namespace YYS_Arrange.Class
 {
     class Tools
     {
-
+        private static DateTime _dtStart = new DateTime(1970, 1, 1, 8, 0, 0);
         // 从一个对象信息生成Json串
         public static string ObjectToJson(object obj)
         {
@@ -64,22 +64,38 @@ namespace YYS_Arrange.Class
                 return i.ToString();
             }
         }
-
+        /// <summary>
+        /// 双精度浮点转面板显示
+        /// </summary>
+        /// <param name="i">要显示的数值</param>
+        /// <param name="isPercentage">是否为百分比显示</param>
+        /// <returns></returns>
         public static string Data2String(double i,bool isPercentage)
         {
             if (isPercentage)
             {
-                double j = i * 10000;
-                int k = (int)j;
-                float m = k / 100;
-                return m.ToString() + @"%";
+                double j = Math.Round(i, 4);
+                double m = j * 100;
+                if (m.ToString().Contains("."))
+                {
+                    return m.ToString() + @"%";
+                }
+                else
+                {
+                    return m.ToString() + @".00%";
+                }
             }
             else
             {
-                double j = i * 100;
-                int k = (int)j;
-                float m = k / 100;
-                return m.ToString();
+                double j = Math.Round(i, 2);
+                if (j.ToString().Contains("."))
+                {
+                    return j.ToString();
+                }
+                else
+                {
+                    return j.ToString() + @".00";
+                }
             }
         }
 
@@ -107,6 +123,34 @@ namespace YYS_Arrange.Class
                 string str = ex.Message;
             }
             return null;
+        }
+
+        /// <summary> 
+        /// 获取时间戳 
+        /// </summary>  
+        public static string GetTimeStamp(DateTime dateTime)
+        {
+            return Convert.ToInt64(dateTime.Subtract(_dtStart).TotalMilliseconds).ToString();
+        }
+
+        /// <summary> 
+        /// 根据时间戳获取时间 
+        /// </summary>  
+        public static DateTime TimeStampToDateTime(string timeStamp)
+        {
+            return _dtStart.AddSeconds(Convert.ToInt64(timeStamp));
+        }
+
+        /// <summary> 
+        /// 根据时间戳获取时间 
+        /// </summary>  
+        public static DateTime TimeStampToDateTime(long timeStamp)
+        {
+            if (timeStamp > 0)
+            {
+                return _dtStart.AddSeconds(timeStamp);
+            }
+            return DateTime.MinValue;
         }
     }
 }
