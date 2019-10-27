@@ -145,6 +145,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
+            this.HeroShardsPanel = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -184,6 +185,7 @@
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // PlayerNameBox
@@ -1315,6 +1317,7 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.HeroShardsPanel);
             this.tabPage6.Location = new System.Drawing.Point(84, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -1371,6 +1374,14 @@
             this.button1.Text = "打开其他快照";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // HeroShardsPanel
+            // 
+            this.HeroShardsPanel.AutoScroll = true;
+            this.HeroShardsPanel.Location = new System.Drawing.Point(6, 6);
+            this.HeroShardsPanel.Name = "HeroShardsPanel";
+            this.HeroShardsPanel.Size = new System.Drawing.Size(1318, 676);
+            this.HeroShardsPanel.TabIndex = 0;
+            // 
             // EquipsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -1424,6 +1435,7 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1547,5 +1559,6 @@
         private System.Windows.Forms.TextBox HeroNameSearchTextBox;
         private System.Windows.Forms.ComboBox StarComboBox;
         private System.Windows.Forms.ComboBox RarityComboBox;
+        private System.Windows.Forms.Panel HeroShardsPanel;
     }
 }

@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using YYS_Arrange.Controls;
 using System.Windows.Forms;
 using YYS_Arrange.Class;
 
@@ -36,6 +36,8 @@ namespace YYS_Arrange.Forms
             ShowBaseData();
 
             ShowHerosFold(string.Empty, -1, string.Empty);
+
+            ShowHeroShards();
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
@@ -478,6 +480,16 @@ namespace YYS_Arrange.Forms
             string name = HeroNameSearchTextBox.Text;
             
             ShowHerosFold(rarity, star, name);
+        }
+
+        private void ShowHeroShards()
+        {
+            for (int i = 0; i < GlobalData.root.data.hero_book_shards.Count; i++)
+            {
+                HeroPatch heroPatch = new HeroPatch(GlobalData.root.data.hero_book_shards[i].hero_id);
+                heroPatch.Location = new Point((i % 4) * 318 + 3, (i - i % 4) / 4 * 124 + 3);
+                HeroShardsPanel.Controls.Add(heroPatch);
+            }
         }
 
     }

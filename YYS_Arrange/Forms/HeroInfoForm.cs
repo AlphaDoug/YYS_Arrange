@@ -30,7 +30,7 @@ namespace YYS_Arrange.Forms
                 }
             }
             InitializeComponent();
-            SetParent();
+            //SetParent();
             ShowInfo();
         }
 
@@ -117,23 +117,24 @@ namespace YYS_Arrange.Forms
 
         private void SetParent()
         {
-            Skill1Label.Parent = Skill1PictureBox;
-            Skill2Label.Parent = Skill2PictureBox;
-            //Skill3Label.Parent = Skill3PictureBox;
 
-            //Equip1Lv.Parent = Equip_Pos1_Pic;
-            //Equip2Lv.Parent = Equip_Pos2_Pic;
-            //Equip3Lv.Parent = Equip_Pos3_Pic;
-            //Equip4Lv.Parent = Equip_Pos4_Pic;
-            //Equip5Lv.Parent = Equip_Pos5_Pic;
-            //Equip6Lv.Parent = Equip_Pos6_Pic;
+            Skill1Label.Parent = HeroInfosPanel;
+            Skill2Label.Parent = HeroInfosPanel;
+            Skill3Label.Parent = HeroInfosPanel;
 
-            //Equip_Pos1_Pic.Parent = Equip_Pos1_Pic_Bg;
-            //Equip_Pos2_Pic.Parent = Equip_Pos2_Pic_Bg;
-            //Equip_Pos3_Pic.Parent = Equip_Pos3_Pic_Bg;
-            //Equip_Pos4_Pic.Parent = Equip_Pos4_Pic_Bg;
-            //Equip_Pos5_Pic.Parent = Equip_Pos5_Pic_Bg;
-            //Equip_Pos6_Pic.Parent = Equip_Pos6_Pic_Bg;
+            Equip1Lv.Parent = HeroInfosPanel;
+            Equip2Lv.Parent = HeroInfosPanel;
+            Equip3Lv.Parent = HeroInfosPanel;
+            Equip4Lv.Parent = HeroInfosPanel;
+            Equip5Lv.Parent = HeroInfosPanel;
+            Equip6Lv.Parent = HeroInfosPanel;
+
+            Equip_Pos1_Pic.Parent = HeroInfosPanel;
+            Equip_Pos2_Pic.Parent = HeroInfosPanel;
+            Equip_Pos3_Pic.Parent = HeroInfosPanel;
+            Equip_Pos4_Pic.Parent = HeroInfosPanel;
+            Equip_Pos5_Pic.Parent = HeroInfosPanel;
+            Equip_Pos6_Pic.Parent = HeroInfosPanel;
         }
     }
 }

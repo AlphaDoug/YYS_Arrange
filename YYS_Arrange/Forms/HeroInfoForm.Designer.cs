@@ -52,25 +52,6 @@
             this.EffectResistAttrLabel = new System.Windows.Forms.Label();
             this.Attack_CritDamageLabel = new System.Windows.Forms.Label();
             this.HP_CritDamageLabel = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Equip6Lv = new System.Windows.Forms.Label();
-            this.Equip1Lv = new System.Windows.Forms.Label();
-            this.Equip2Lv = new System.Windows.Forms.Label();
-            this.Equip3Lv = new System.Windows.Forms.Label();
-            this.Equip4Lv = new System.Windows.Forms.Label();
-            this.Equip5Lv = new System.Windows.Forms.Label();
-            this.Equip_Pos4_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos6_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos5_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos2_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos3_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos1_Pic = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos5_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos4_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos2_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos3_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos6_Pic_Bg = new System.Windows.Forms.PictureBox();
-            this.Equip_Pos1_Pic_Bg = new System.Windows.Forms.PictureBox();
             this.BornTimeLabel = new System.Windows.Forms.Label();
             this.Skill2Label = new System.Windows.Forms.Label();
             this.Skill3Label = new System.Windows.Forms.Label();
@@ -89,19 +70,26 @@
             this.AttackRateIconPic = new System.Windows.Forms.PictureBox();
             this.AttackIconPic = new System.Windows.Forms.PictureBox();
             this.HeroPic = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).BeginInit();
+            this.HeroInfosPanel = new System.Windows.Forms.Panel();
+            this.Equip_Pos1_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos6_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos3_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos2_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos4_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos5_Pic_Bg = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos1_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos3_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos2_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos5_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos6_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip_Pos4_Pic = new System.Windows.Forms.PictureBox();
+            this.Equip5Lv = new System.Windows.Forms.Label();
+            this.Equip4Lv = new System.Windows.Forms.Label();
+            this.Equip3Lv = new System.Windows.Forms.Label();
+            this.Equip2Lv = new System.Windows.Forms.Label();
+            this.Equip1Lv = new System.Windows.Forms.Label();
+            this.Equip6Lv = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Skill3PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Skill2PictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Skill1PictureBox)).BeginInit();
@@ -116,6 +104,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.AttackRateIconPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AttackIconPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // HeroRarityLabel
@@ -359,229 +360,6 @@
             this.HP_CritDamageLabel.Text = "22222.22+22222.22";
             this.HP_CritDamageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.Equip6Lv);
-            this.panel1.Controls.Add(this.Equip1Lv);
-            this.panel1.Controls.Add(this.Equip2Lv);
-            this.panel1.Controls.Add(this.Equip3Lv);
-            this.panel1.Controls.Add(this.Equip4Lv);
-            this.panel1.Controls.Add(this.Equip5Lv);
-            this.panel1.Controls.Add(this.Equip_Pos4_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos6_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos5_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos2_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos3_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos1_Pic);
-            this.panel1.Controls.Add(this.Equip_Pos5_Pic_Bg);
-            this.panel1.Controls.Add(this.Equip_Pos4_Pic_Bg);
-            this.panel1.Controls.Add(this.Equip_Pos2_Pic_Bg);
-            this.panel1.Controls.Add(this.Equip_Pos3_Pic_Bg);
-            this.panel1.Controls.Add(this.Equip_Pos6_Pic_Bg);
-            this.panel1.Controls.Add(this.Equip_Pos1_Pic_Bg);
-            this.panel1.Location = new System.Drawing.Point(302, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 195);
-            this.panel1.TabIndex = 4;
-            // 
-            // Equip6Lv
-            // 
-            this.Equip6Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip6Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip6Lv.Location = new System.Drawing.Point(130, 10);
-            this.Equip6Lv.Name = "Equip6Lv";
-            this.Equip6Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip6Lv.TabIndex = 1;
-            this.Equip6Lv.Text = "+10";
-            this.Equip6Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip1Lv
-            // 
-            this.Equip1Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip1Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip1Lv.Location = new System.Drawing.Point(61, 10);
-            this.Equip1Lv.Name = "Equip1Lv";
-            this.Equip1Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip1Lv.TabIndex = 1;
-            this.Equip1Lv.Text = "+10";
-            this.Equip1Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip2Lv
-            // 
-            this.Equip2Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip2Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip2Lv.Location = new System.Drawing.Point(21, 69);
-            this.Equip2Lv.Name = "Equip2Lv";
-            this.Equip2Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip2Lv.TabIndex = 1;
-            this.Equip2Lv.Text = "+10";
-            this.Equip2Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip3Lv
-            // 
-            this.Equip3Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip3Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip3Lv.Location = new System.Drawing.Point(61, 137);
-            this.Equip3Lv.Name = "Equip3Lv";
-            this.Equip3Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip3Lv.TabIndex = 1;
-            this.Equip3Lv.Text = "+10";
-            this.Equip3Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip4Lv
-            // 
-            this.Equip4Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip4Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip4Lv.Location = new System.Drawing.Point(130, 137);
-            this.Equip4Lv.Name = "Equip4Lv";
-            this.Equip4Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip4Lv.TabIndex = 1;
-            this.Equip4Lv.Text = "+10";
-            this.Equip4Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip5Lv
-            // 
-            this.Equip5Lv.BackColor = System.Drawing.Color.Transparent;
-            this.Equip5Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Equip5Lv.Location = new System.Drawing.Point(161, 72);
-            this.Equip5Lv.Name = "Equip5Lv";
-            this.Equip5Lv.Size = new System.Drawing.Size(50, 19);
-            this.Equip5Lv.TabIndex = 1;
-            this.Equip5Lv.Text = "+10";
-            this.Equip5Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // Equip_Pos4_Pic
-            // 
-            this.Equip_Pos4_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos4_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos4_Pic.Location = new System.Drawing.Point(132, 139);
-            this.Equip_Pos4_Pic.Name = "Equip_Pos4_Pic";
-            this.Equip_Pos4_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos4_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos4_Pic.TabIndex = 2;
-            this.Equip_Pos4_Pic.TabStop = false;
-            // 
-            // Equip_Pos6_Pic
-            // 
-            this.Equip_Pos6_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos6_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos6_Pic.Location = new System.Drawing.Point(132, 12);
-            this.Equip_Pos6_Pic.Name = "Equip_Pos6_Pic";
-            this.Equip_Pos6_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos6_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos6_Pic.TabIndex = 2;
-            this.Equip_Pos6_Pic.TabStop = false;
-            // 
-            // Equip_Pos5_Pic
-            // 
-            this.Equip_Pos5_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos5_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos5_Pic.Location = new System.Drawing.Point(166, 73);
-            this.Equip_Pos5_Pic.Name = "Equip_Pos5_Pic";
-            this.Equip_Pos5_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos5_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos5_Pic.TabIndex = 2;
-            this.Equip_Pos5_Pic.TabStop = false;
-            // 
-            // Equip_Pos2_Pic
-            // 
-            this.Equip_Pos2_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos2_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos2_Pic.Location = new System.Drawing.Point(24, 73);
-            this.Equip_Pos2_Pic.Name = "Equip_Pos2_Pic";
-            this.Equip_Pos2_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos2_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos2_Pic.TabIndex = 2;
-            this.Equip_Pos2_Pic.TabStop = false;
-            // 
-            // Equip_Pos3_Pic
-            // 
-            this.Equip_Pos3_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos3_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos3_Pic.Location = new System.Drawing.Point(64, 139);
-            this.Equip_Pos3_Pic.Name = "Equip_Pos3_Pic";
-            this.Equip_Pos3_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos3_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos3_Pic.TabIndex = 2;
-            this.Equip_Pos3_Pic.TabStop = false;
-            // 
-            // Equip_Pos1_Pic
-            // 
-            this.Equip_Pos1_Pic.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos1_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
-            this.Equip_Pos1_Pic.Location = new System.Drawing.Point(64, 12);
-            this.Equip_Pos1_Pic.Name = "Equip_Pos1_Pic";
-            this.Equip_Pos1_Pic.Size = new System.Drawing.Size(45, 45);
-            this.Equip_Pos1_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos1_Pic.TabIndex = 2;
-            this.Equip_Pos1_Pic.TabStop = false;
-            // 
-            // Equip_Pos5_Pic_Bg
-            // 
-            this.Equip_Pos5_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos5_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos5;
-            this.Equip_Pos5_Pic_Bg.Location = new System.Drawing.Point(164, 72);
-            this.Equip_Pos5_Pic_Bg.Name = "Equip_Pos5_Pic_Bg";
-            this.Equip_Pos5_Pic_Bg.Size = new System.Drawing.Size(59, 50);
-            this.Equip_Pos5_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos5_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos5_Pic_Bg.TabStop = false;
-            // 
-            // Equip_Pos4_Pic_Bg
-            // 
-            this.Equip_Pos4_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos4_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos4;
-            this.Equip_Pos4_Pic_Bg.Location = new System.Drawing.Point(130, 137);
-            this.Equip_Pos4_Pic_Bg.Name = "Equip_Pos4_Pic_Bg";
-            this.Equip_Pos4_Pic_Bg.Size = new System.Drawing.Size(50, 50);
-            this.Equip_Pos4_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Equip_Pos4_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos4_Pic_Bg.TabStop = false;
-            // 
-            // Equip_Pos2_Pic_Bg
-            // 
-            this.Equip_Pos2_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos2_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos2;
-            this.Equip_Pos2_Pic_Bg.Location = new System.Drawing.Point(12, 72);
-            this.Equip_Pos2_Pic_Bg.Name = "Equip_Pos2_Pic_Bg";
-            this.Equip_Pos2_Pic_Bg.Size = new System.Drawing.Size(64, 50);
-            this.Equip_Pos2_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Equip_Pos2_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos2_Pic_Bg.TabStop = false;
-            // 
-            // Equip_Pos3_Pic_Bg
-            // 
-            this.Equip_Pos3_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos3_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos3;
-            this.Equip_Pos3_Pic_Bg.Location = new System.Drawing.Point(61, 137);
-            this.Equip_Pos3_Pic_Bg.Name = "Equip_Pos3_Pic_Bg";
-            this.Equip_Pos3_Pic_Bg.Size = new System.Drawing.Size(50, 50);
-            this.Equip_Pos3_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Equip_Pos3_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos3_Pic_Bg.TabStop = false;
-            // 
-            // Equip_Pos6_Pic_Bg
-            // 
-            this.Equip_Pos6_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos6_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos6;
-            this.Equip_Pos6_Pic_Bg.Location = new System.Drawing.Point(130, 10);
-            this.Equip_Pos6_Pic_Bg.Name = "Equip_Pos6_Pic_Bg";
-            this.Equip_Pos6_Pic_Bg.Size = new System.Drawing.Size(50, 50);
-            this.Equip_Pos6_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Equip_Pos6_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos6_Pic_Bg.TabStop = false;
-            // 
-            // Equip_Pos1_Pic_Bg
-            // 
-            this.Equip_Pos1_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
-            this.Equip_Pos1_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos1;
-            this.Equip_Pos1_Pic_Bg.Location = new System.Drawing.Point(61, 10);
-            this.Equip_Pos1_Pic_Bg.Name = "Equip_Pos1_Pic_Bg";
-            this.Equip_Pos1_Pic_Bg.Size = new System.Drawing.Size(50, 50);
-            this.Equip_Pos1_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Equip_Pos1_Pic_Bg.TabIndex = 0;
-            this.Equip_Pos1_Pic_Bg.TabStop = false;
-            // 
             // BornTimeLabel
             // 
             this.BornTimeLabel.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -775,6 +553,236 @@
             this.HeroPic.TabIndex = 0;
             this.HeroPic.TabStop = false;
             // 
+            // HeroInfosPanel
+            // 
+            this.HeroInfosPanel.Location = new System.Drawing.Point(302, 43);
+            this.HeroInfosPanel.Name = "HeroInfosPanel";
+            this.HeroInfosPanel.Size = new System.Drawing.Size(240, 265);
+            this.HeroInfosPanel.TabIndex = 7;
+            // 
+            // Equip_Pos1_Pic_Bg
+            // 
+            this.Equip_Pos1_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos1_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos1;
+            this.Equip_Pos1_Pic_Bg.Location = new System.Drawing.Point(61, 10);
+            this.Equip_Pos1_Pic_Bg.Name = "Equip_Pos1_Pic_Bg";
+            this.Equip_Pos1_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos1_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos1_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos1_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos6_Pic_Bg
+            // 
+            this.Equip_Pos6_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos6_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos6;
+            this.Equip_Pos6_Pic_Bg.Location = new System.Drawing.Point(130, 10);
+            this.Equip_Pos6_Pic_Bg.Name = "Equip_Pos6_Pic_Bg";
+            this.Equip_Pos6_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos6_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos6_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos6_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos3_Pic_Bg
+            // 
+            this.Equip_Pos3_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos3_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos3;
+            this.Equip_Pos3_Pic_Bg.Location = new System.Drawing.Point(61, 137);
+            this.Equip_Pos3_Pic_Bg.Name = "Equip_Pos3_Pic_Bg";
+            this.Equip_Pos3_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos3_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos3_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos3_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos2_Pic_Bg
+            // 
+            this.Equip_Pos2_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos2_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos2;
+            this.Equip_Pos2_Pic_Bg.Location = new System.Drawing.Point(12, 72);
+            this.Equip_Pos2_Pic_Bg.Name = "Equip_Pos2_Pic_Bg";
+            this.Equip_Pos2_Pic_Bg.Size = new System.Drawing.Size(64, 50);
+            this.Equip_Pos2_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos2_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos2_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos4_Pic_Bg
+            // 
+            this.Equip_Pos4_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos4_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos4;
+            this.Equip_Pos4_Pic_Bg.Location = new System.Drawing.Point(130, 137);
+            this.Equip_Pos4_Pic_Bg.Name = "Equip_Pos4_Pic_Bg";
+            this.Equip_Pos4_Pic_Bg.Size = new System.Drawing.Size(50, 50);
+            this.Equip_Pos4_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Equip_Pos4_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos4_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos5_Pic_Bg
+            // 
+            this.Equip_Pos5_Pic_Bg.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos5_Pic_Bg.Image = global::YYS_Arrange.Properties.Resources.equip__border_pos5;
+            this.Equip_Pos5_Pic_Bg.Location = new System.Drawing.Point(164, 72);
+            this.Equip_Pos5_Pic_Bg.Name = "Equip_Pos5_Pic_Bg";
+            this.Equip_Pos5_Pic_Bg.Size = new System.Drawing.Size(59, 50);
+            this.Equip_Pos5_Pic_Bg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos5_Pic_Bg.TabIndex = 0;
+            this.Equip_Pos5_Pic_Bg.TabStop = false;
+            // 
+            // Equip_Pos1_Pic
+            // 
+            this.Equip_Pos1_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos1_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos1_Pic.Location = new System.Drawing.Point(64, 12);
+            this.Equip_Pos1_Pic.Name = "Equip_Pos1_Pic";
+            this.Equip_Pos1_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos1_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos1_Pic.TabIndex = 2;
+            this.Equip_Pos1_Pic.TabStop = false;
+            // 
+            // Equip_Pos3_Pic
+            // 
+            this.Equip_Pos3_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos3_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos3_Pic.Location = new System.Drawing.Point(64, 139);
+            this.Equip_Pos3_Pic.Name = "Equip_Pos3_Pic";
+            this.Equip_Pos3_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos3_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos3_Pic.TabIndex = 2;
+            this.Equip_Pos3_Pic.TabStop = false;
+            // 
+            // Equip_Pos2_Pic
+            // 
+            this.Equip_Pos2_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos2_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos2_Pic.Location = new System.Drawing.Point(24, 73);
+            this.Equip_Pos2_Pic.Name = "Equip_Pos2_Pic";
+            this.Equip_Pos2_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos2_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos2_Pic.TabIndex = 2;
+            this.Equip_Pos2_Pic.TabStop = false;
+            // 
+            // Equip_Pos5_Pic
+            // 
+            this.Equip_Pos5_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos5_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos5_Pic.Location = new System.Drawing.Point(166, 73);
+            this.Equip_Pos5_Pic.Name = "Equip_Pos5_Pic";
+            this.Equip_Pos5_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos5_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos5_Pic.TabIndex = 2;
+            this.Equip_Pos5_Pic.TabStop = false;
+            // 
+            // Equip_Pos6_Pic
+            // 
+            this.Equip_Pos6_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos6_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos6_Pic.Location = new System.Drawing.Point(132, 12);
+            this.Equip_Pos6_Pic.Name = "Equip_Pos6_Pic";
+            this.Equip_Pos6_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos6_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos6_Pic.TabIndex = 2;
+            this.Equip_Pos6_Pic.TabStop = false;
+            // 
+            // Equip_Pos4_Pic
+            // 
+            this.Equip_Pos4_Pic.BackColor = System.Drawing.Color.Transparent;
+            this.Equip_Pos4_Pic.Image = global::YYS_Arrange.Properties.Resources._300009;
+            this.Equip_Pos4_Pic.Location = new System.Drawing.Point(132, 139);
+            this.Equip_Pos4_Pic.Name = "Equip_Pos4_Pic";
+            this.Equip_Pos4_Pic.Size = new System.Drawing.Size(45, 45);
+            this.Equip_Pos4_Pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Equip_Pos4_Pic.TabIndex = 2;
+            this.Equip_Pos4_Pic.TabStop = false;
+            // 
+            // Equip5Lv
+            // 
+            this.Equip5Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip5Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip5Lv.Location = new System.Drawing.Point(161, 72);
+            this.Equip5Lv.Name = "Equip5Lv";
+            this.Equip5Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip5Lv.TabIndex = 1;
+            this.Equip5Lv.Text = "+10";
+            this.Equip5Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Equip4Lv
+            // 
+            this.Equip4Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip4Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip4Lv.Location = new System.Drawing.Point(130, 137);
+            this.Equip4Lv.Name = "Equip4Lv";
+            this.Equip4Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip4Lv.TabIndex = 1;
+            this.Equip4Lv.Text = "+10";
+            this.Equip4Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Equip3Lv
+            // 
+            this.Equip3Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip3Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip3Lv.Location = new System.Drawing.Point(61, 137);
+            this.Equip3Lv.Name = "Equip3Lv";
+            this.Equip3Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip3Lv.TabIndex = 1;
+            this.Equip3Lv.Text = "+10";
+            this.Equip3Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Equip2Lv
+            // 
+            this.Equip2Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip2Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip2Lv.Location = new System.Drawing.Point(21, 69);
+            this.Equip2Lv.Name = "Equip2Lv";
+            this.Equip2Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip2Lv.TabIndex = 1;
+            this.Equip2Lv.Text = "+10";
+            this.Equip2Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Equip1Lv
+            // 
+            this.Equip1Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip1Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip1Lv.Location = new System.Drawing.Point(61, 10);
+            this.Equip1Lv.Name = "Equip1Lv";
+            this.Equip1Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip1Lv.TabIndex = 1;
+            this.Equip1Lv.Text = "+10";
+            this.Equip1Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // Equip6Lv
+            // 
+            this.Equip6Lv.BackColor = System.Drawing.Color.Transparent;
+            this.Equip6Lv.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Equip6Lv.Location = new System.Drawing.Point(130, 10);
+            this.Equip6Lv.Name = "Equip6Lv";
+            this.Equip6Lv.Size = new System.Drawing.Size(50, 19);
+            this.Equip6Lv.TabIndex = 1;
+            this.Equip6Lv.Text = "+10";
+            this.Equip6Lv.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Equip6Lv);
+            this.panel1.Controls.Add(this.Equip1Lv);
+            this.panel1.Controls.Add(this.Equip2Lv);
+            this.panel1.Controls.Add(this.Equip3Lv);
+            this.panel1.Controls.Add(this.Equip4Lv);
+            this.panel1.Controls.Add(this.Equip5Lv);
+            this.panel1.Controls.Add(this.Equip_Pos4_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos6_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos5_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos2_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos3_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos1_Pic);
+            this.panel1.Controls.Add(this.Equip_Pos5_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos4_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos2_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos3_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos6_Pic_Bg);
+            this.panel1.Controls.Add(this.Equip_Pos1_Pic_Bg);
+            this.panel1.Location = new System.Drawing.Point(302, 43);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(240, 195);
+            this.panel1.TabIndex = 4;
+            // 
             // HeroInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -823,6 +831,7 @@
             this.Controls.Add(this.HeroNameLabel);
             this.Controls.Add(this.HeroRarityLabel);
             this.Controls.Add(this.HeroPic);
+            this.Controls.Add(this.HeroInfosPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "HeroInfoForm";
             this.ShowIcon = false;
@@ -830,19 +839,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HeroInfoForm";
             this.Load += new System.EventHandler(this.HeroInfoForm_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Skill3PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Skill2PictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Skill1PictureBox)).EndInit();
@@ -857,6 +853,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.AttackRateIconPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AttackIconPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.HeroPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic_Bg)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos1_Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos3_Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos2_Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos5_Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos6_Pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Equip_Pos4_Pic)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -898,25 +907,6 @@
         private System.Windows.Forms.Label EffectResistAttrLabel;
         private System.Windows.Forms.Label Attack_CritDamageLabel;
         private System.Windows.Forms.Label HP_CritDamageLabel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox Equip_Pos1_Pic_Bg;
-        private System.Windows.Forms.PictureBox Equip_Pos5_Pic_Bg;
-        private System.Windows.Forms.PictureBox Equip_Pos4_Pic_Bg;
-        private System.Windows.Forms.PictureBox Equip_Pos2_Pic_Bg;
-        private System.Windows.Forms.PictureBox Equip_Pos3_Pic_Bg;
-        private System.Windows.Forms.PictureBox Equip_Pos6_Pic_Bg;
-        private System.Windows.Forms.Label Equip2Lv;
-        private System.Windows.Forms.Label Equip3Lv;
-        private System.Windows.Forms.Label Equip4Lv;
-        private System.Windows.Forms.Label Equip5Lv;
-        private System.Windows.Forms.Label Equip6Lv;
-        private System.Windows.Forms.Label Equip1Lv;
-        private System.Windows.Forms.PictureBox Equip_Pos1_Pic;
-        private System.Windows.Forms.PictureBox Equip_Pos4_Pic;
-        private System.Windows.Forms.PictureBox Equip_Pos6_Pic;
-        private System.Windows.Forms.PictureBox Equip_Pos5_Pic;
-        private System.Windows.Forms.PictureBox Equip_Pos2_Pic;
-        private System.Windows.Forms.PictureBox Equip_Pos3_Pic;
         private System.Windows.Forms.PictureBox Skill1PictureBox;
         private System.Windows.Forms.PictureBox Skill2PictureBox;
         private System.Windows.Forms.PictureBox Skill3PictureBox;
@@ -924,5 +914,25 @@
         private System.Windows.Forms.Label Skill1Label;
         private System.Windows.Forms.Label Skill3Label;
         private System.Windows.Forms.Label Skill2Label;
+        private System.Windows.Forms.Panel HeroInfosPanel;
+        private System.Windows.Forms.PictureBox Equip_Pos1_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos6_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos3_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos2_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos4_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos5_Pic_Bg;
+        private System.Windows.Forms.PictureBox Equip_Pos1_Pic;
+        private System.Windows.Forms.PictureBox Equip_Pos3_Pic;
+        private System.Windows.Forms.PictureBox Equip_Pos2_Pic;
+        private System.Windows.Forms.PictureBox Equip_Pos5_Pic;
+        private System.Windows.Forms.PictureBox Equip_Pos6_Pic;
+        private System.Windows.Forms.PictureBox Equip_Pos4_Pic;
+        private System.Windows.Forms.Label Equip5Lv;
+        private System.Windows.Forms.Label Equip4Lv;
+        private System.Windows.Forms.Label Equip3Lv;
+        private System.Windows.Forms.Label Equip2Lv;
+        private System.Windows.Forms.Label Equip1Lv;
+        private System.Windows.Forms.Label Equip6Lv;
+        private System.Windows.Forms.Panel panel1;
     }
 }

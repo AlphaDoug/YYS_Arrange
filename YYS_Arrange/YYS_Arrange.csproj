@@ -59,6 +59,12 @@
     <Compile Include="Controls\EquipsControl.Designer.cs">
       <DependentUpon>EquipsControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\HeroPatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\HeroPatch.Designer.cs">
+      <DependentUpon>HeroPatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\HeroUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\EquipsControl.resx">
       <DependentUpon>EquipsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HeroPatch.resx">
+      <DependentUpon>HeroPatch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\HeroUserControl.resx">
       <DependentUpon>HeroUserControl.cs</DependentUpon>
