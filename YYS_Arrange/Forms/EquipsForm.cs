@@ -25,29 +25,29 @@ namespace YYS_Arrange.Forms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl2.DrawMode = TabDrawMode.OwnerDrawFixed;//设置为用户绘制方式
+            HeroNameSearchTextBox1.DrawMode = TabDrawMode.OwnerDrawFixed;//设置为用户绘制方式
 
             //设置下拉框默认选项
             RarityComboBox.Text = "全部";
             StarComboBox.Text = "全部";
-
+            //加载全局数据
             InitGlobalData();
-
+            //基础信息界面
             ShowBaseData();
-
+            //式神界面
             ShowHerosFold(string.Empty, -1, string.Empty);
-
-            ShowHeroShards();
+            //碎片界面
+            ShowHeroShards(string.Empty, string.Empty);
         }
 
         private void tabControl2_DrawItem(object sender, DrawItemEventArgs e)
         {
             SolidBrush _Brush = new SolidBrush(Color.Black);//单色画刷
-            RectangleF _TabTextArea = (RectangleF)tabControl2.GetTabRect(e.Index);//绘制区域
+            RectangleF _TabTextArea = (RectangleF)HeroNameSearchTextBox1.GetTabRect(e.Index);//绘制区域
             StringFormat _sf = new StringFormat();//封装文本布局格式信息
             _sf.LineAlignment = StringAlignment.Center;
             _sf.Alignment = StringAlignment.Center;
-            e.Graphics.DrawString(tabControl2.Controls[e.Index].Text, SystemInformation.MenuFont, _Brush, _TabTextArea, _sf);
+            e.Graphics.DrawString(HeroNameSearchTextBox1.Controls[e.Index].Text, SystemInformation.MenuFont, _Brush, _TabTextArea, _sf);
         }
 
 
@@ -481,16 +481,71 @@ namespace YYS_Arrange.Forms
             
             ShowHerosFold(rarity, star, name);
         }
-
-        private void ShowHeroShards()
+        /// <summary>
+        /// 将式神碎片放到界面上展示
+        /// </summary>
+        private void ShowHeroShards(string name,string rarity)
         {
+            string _rarity = "";
+            string _name = "";
+            HeroShardsPanel.Controls.Clear();
+            int count = 0;
             for (int i = 0; i < GlobalData.root.data.hero_book_shards.Count; i++)
             {
-                HeroPatch heroPatch = new HeroPatch(GlobalData.root.data.hero_book_shards[i].hero_id);
-                heroPatch.Location = new Point((i % 4) * 318 + 3, (i - i % 4) / 4 * 124 + 3);
-                HeroShardsPanel.Controls.Add(heroPatch);
+                HeroPatch heroPatch = new HeroPatch(GlobalData.root.data.hero_book_shards[i].hero_id);            
+                _name = GameConfig.GetHeroName(GlobalData.root.data.hero_book_shards[i].hero_id);
+                if (_name.Contains(name) && _rarity == rarity)
+                {
+                    HeroShardsPanel.Controls.Add(heroPatch);
+                    heroPatch.Location = new Point((count % 4) * 318 + 3, (count - count % 4) / 4 * 124 + 3);
+                    count++;
+                }
+                for (int j = 0; j < GlobalData.root.data.heroes.Count; j++)
+                {
+                    if (GlobalData.root.data.heroes[j].hero_id == GlobalData.root.data.hero_book_shards[i].hero_id)
+                    {
+                        _rarity = GlobalData.root.data.heroes[j].rarity;
+                    }
+                }
+
+                
             }
         }
-
+        /// <summary>
+        /// 按照式神名字搜索指定的碎片
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StratSearchHeroPatch_Click(object sender, EventArgs e)
+        {
+            string rarity = "";
+            string name = "";
+            switch (RarityComboBox1.SelectedIndex)
+            {
+                case -1:
+                case 0:
+                    break;
+                case 1:
+                    rarity = "SP";
+                    break;
+                case 2:
+                    rarity = "SSR";
+                    break;
+                case 3:
+                    rarity = "SR";
+                    break;
+                case 4:
+                    rarity = "R";
+                    break;
+                case 5:
+                    rarity = "N";
+                    break;
+                default:
+                    break;
+            }
+            name = StratSearchHero1.Text;
+            ShowHeroShards(name, rarity);
     }
+        }
+        
 }

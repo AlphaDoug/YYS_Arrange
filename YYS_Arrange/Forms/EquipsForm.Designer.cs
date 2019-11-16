@@ -129,23 +129,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.HeroNameSearchTextBox1 = new System.Windows.Forms.TabControl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.StarComboBox = new System.Windows.Forms.ComboBox();
             this.RarityComboBox = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.StratSearchHero = new System.Windows.Forms.Button();
             this.HeroNameSearchTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.HeroShardsPanel = new System.Windows.Forms.Panel();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
-            this.HeroShardsPanel = new System.Windows.Forms.Panel();
+            this.RarityComboBox1 = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.StratSearchHeroPatch = new System.Windows.Forms.Button();
+            this.StratSearchHero1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.StarComboBox = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -183,7 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.tabControl2.SuspendLayout();
+            this.HeroNameSearchTextBox1.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.SuspendLayout();
@@ -1180,7 +1185,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.tabControl2);
+            this.tabPage1.Controls.Add(this.HeroNameSearchTextBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -1189,34 +1194,34 @@
             this.tabPage1.Text = "  式神  ";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabControl2
+            // HeroNameSearchTextBox1
             // 
-            this.tabControl2.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
-            this.tabControl2.ItemSize = new System.Drawing.Size(40, 80);
-            this.tabControl2.Location = new System.Drawing.Point(-4, 0);
-            this.tabControl2.Multiline = true;
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1418, 696);
-            this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl2.TabIndex = 0;
-            this.tabControl2.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl2_DrawItem);
+            this.HeroNameSearchTextBox1.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.HeroNameSearchTextBox1.Controls.Add(this.tabPage5);
+            this.HeroNameSearchTextBox1.Controls.Add(this.tabPage6);
+            this.HeroNameSearchTextBox1.Controls.Add(this.tabPage7);
+            this.HeroNameSearchTextBox1.Controls.Add(this.tabPage8);
+            this.HeroNameSearchTextBox1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
+            this.HeroNameSearchTextBox1.ItemSize = new System.Drawing.Size(40, 80);
+            this.HeroNameSearchTextBox1.Location = new System.Drawing.Point(-4, 0);
+            this.HeroNameSearchTextBox1.Multiline = true;
+            this.HeroNameSearchTextBox1.Name = "HeroNameSearchTextBox1";
+            this.HeroNameSearchTextBox1.SelectedIndex = 0;
+            this.HeroNameSearchTextBox1.Size = new System.Drawing.Size(1418, 696);
+            this.HeroNameSearchTextBox1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.HeroNameSearchTextBox1.TabIndex = 0;
+            this.HeroNameSearchTextBox1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl2_DrawItem);
             // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.StarComboBox);
             this.tabPage5.Controls.Add(this.RarityComboBox);
-            this.tabPage5.Controls.Add(this.label7);
             this.tabPage5.Controls.Add(this.label6);
             this.tabPage5.Controls.Add(this.label3);
             this.tabPage5.Controls.Add(this.StratSearchHero);
             this.tabPage5.Controls.Add(this.HeroNameSearchTextBox);
             this.tabPage5.Controls.Add(this.panel1);
+            this.tabPage5.Controls.Add(this.label7);
             this.tabPage5.Location = new System.Drawing.Point(84, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -1225,23 +1230,6 @@
             this.tabPage5.TabIndex = 0;
             this.tabPage5.Text = "式神列表";
             this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // StarComboBox
-            // 
-            this.StarComboBox.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.StarComboBox.FormattingEnabled = true;
-            this.StarComboBox.Items.AddRange(new object[] {
-            "全部",
-            "6星",
-            "5星",
-            "4星",
-            "3星",
-            "2星"});
-            this.StarComboBox.Location = new System.Drawing.Point(385, 3);
-            this.StarComboBox.Name = "StarComboBox";
-            this.StarComboBox.Size = new System.Drawing.Size(78, 27);
-            this.StarComboBox.TabIndex = 6;
-            this.StarComboBox.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // RarityComboBox
             // 
@@ -1259,16 +1247,6 @@
             this.RarityComboBox.Size = new System.Drawing.Size(78, 27);
             this.RarityComboBox.TabIndex = 6;
             this.RarityComboBox.SelectedValueChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(341, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 25);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "星级：";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
@@ -1318,6 +1296,11 @@
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.HeroShardsPanel);
+            this.tabPage6.Controls.Add(this.RarityComboBox1);
+            this.tabPage6.Controls.Add(this.label12);
+            this.tabPage6.Controls.Add(this.StratSearchHero1);
+            this.tabPage6.Controls.Add(this.label13);
+            this.tabPage6.Controls.Add(this.StratSearchHeroPatch);
             this.tabPage6.Location = new System.Drawing.Point(84, 4);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -1325,6 +1308,14 @@
             this.tabPage6.TabIndex = 1;
             this.tabPage6.Text = "碎片";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // HeroShardsPanel
+            // 
+            this.HeroShardsPanel.AutoScroll = true;
+            this.HeroShardsPanel.Location = new System.Drawing.Point(6, 39);
+            this.HeroShardsPanel.Name = "HeroShardsPanel";
+            this.HeroShardsPanel.Size = new System.Drawing.Size(1318, 643);
+            this.HeroShardsPanel.TabIndex = 0;
             // 
             // tabPage7
             // 
@@ -1374,13 +1365,85 @@
             this.button1.Text = "打开其他快照";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // HeroShardsPanel
+            // RarityComboBox1
             // 
-            this.HeroShardsPanel.AutoScroll = true;
-            this.HeroShardsPanel.Location = new System.Drawing.Point(6, 6);
-            this.HeroShardsPanel.Name = "HeroShardsPanel";
-            this.HeroShardsPanel.Size = new System.Drawing.Size(1318, 676);
-            this.HeroShardsPanel.TabIndex = 0;
+            this.RarityComboBox1.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RarityComboBox1.FormattingEnabled = true;
+            this.RarityComboBox1.Items.AddRange(new object[] {
+            "全部",
+            "SP",
+            "SSR",
+            "SR",
+            "R",
+            "N"});
+            this.RarityComboBox1.Location = new System.Drawing.Point(257, 3);
+            this.RarityComboBox1.Name = "RarityComboBox1";
+            this.RarityComboBox1.Size = new System.Drawing.Size(78, 27);
+            this.RarityComboBox1.TabIndex = 13;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(202, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(68, 25);
+            this.label12.TabIndex = 11;
+            this.label12.Text = "稀有度：";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label13.Location = new System.Drawing.Point(6, 32);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(1317, 4);
+            this.label13.TabIndex = 9;
+            // 
+            // StratSearchHeroPatch
+            // 
+            this.StratSearchHeroPatch.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.StratSearchHeroPatch.Location = new System.Drawing.Point(137, 4);
+            this.StratSearchHeroPatch.Name = "StratSearchHeroPatch";
+            this.StratSearchHeroPatch.Size = new System.Drawing.Size(59, 25);
+            this.StratSearchHeroPatch.TabIndex = 8;
+            this.StratSearchHeroPatch.Text = "搜索";
+            this.StratSearchHeroPatch.UseVisualStyleBackColor = true;
+            this.StratSearchHeroPatch.Click += new System.EventHandler(this.StratSearchHeroPatch_Click);
+            // 
+            // StratSearchHero1
+            // 
+            this.StratSearchHero1.Font = new System.Drawing.Font("微软雅黑", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.StratSearchHero1.Location = new System.Drawing.Point(6, 3);
+            this.StratSearchHero1.Name = "StratSearchHero1";
+            this.StratSearchHero1.Size = new System.Drawing.Size(125, 27);
+            this.StratSearchHero1.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(341, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 25);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "星级：";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // StarComboBox
+            // 
+            this.StarComboBox.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.StarComboBox.FormattingEnabled = true;
+            this.StarComboBox.Items.AddRange(new object[] {
+            "全部",
+            "6星",
+            "5星",
+            "4星",
+            "3星",
+            "2星"});
+            this.StarComboBox.Location = new System.Drawing.Point(385, 3);
+            this.StarComboBox.Name = "StarComboBox";
+            this.StarComboBox.Size = new System.Drawing.Size(78, 27);
+            this.StarComboBox.TabIndex = 6;
+            this.StarComboBox.SelectedIndexChanged += new System.EventHandler(this.ComboBox_SelectedIndexChanged);
             // 
             // EquipsForm
             // 
@@ -1432,10 +1495,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage1.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
+            this.HeroNameSearchTextBox1.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1540,7 +1604,7 @@
         private System.Windows.Forms.Label SPLabel;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label SSRlabel;
-        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabControl HeroNameSearchTextBox1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
@@ -1552,13 +1616,18 @@
         private System.Windows.Forms.Label NLabel;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button StratSearchHero;
         private System.Windows.Forms.TextBox HeroNameSearchTextBox;
-        private System.Windows.Forms.ComboBox StarComboBox;
         private System.Windows.Forms.ComboBox RarityComboBox;
         private System.Windows.Forms.Panel HeroShardsPanel;
+        private System.Windows.Forms.ComboBox RarityComboBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox StratSearchHero1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button StratSearchHeroPatch;
+        private System.Windows.Forms.ComboBox StarComboBox;
+        private System.Windows.Forms.Label label7;
     }
 }
